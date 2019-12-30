@@ -1,4 +1,5 @@
 module.exports = {
+  // generate Error 안나게 하기 위함.
   mode: 'spa',
   /*
   ** Headers of the page
