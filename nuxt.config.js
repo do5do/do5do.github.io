@@ -38,7 +38,7 @@ module.exports = {
     //API_SERVER_ADDRESS: 'http://192.168.0.6:3333/'  // 집
 
     // 배포용
-    // API_SERVER_ADDRESS: 'https://do5do.github.io'  // Git Page
+    //API_SERVER_ADDRESS: 'https://do5do.github.io'  // Git Page
   },
   /*
   ** Customize the progress bar color
