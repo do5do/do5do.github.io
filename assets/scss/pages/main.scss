@@ -1,0 +1,242 @@
+.main-visual {
+	position: relative;
+	width: 100%;
+	height: calc(var(--vh, 1vh) * 100);
+
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50.5%, -62.5%);
+		height: auto;
+		width: 35.8vw;
+
+		.left-eyeball, .right-eyeball {
+			animation: eyeballMoving 2.6s ease infinite;
+		}
+
+		@keyframes eyeballMoving {
+			0% {
+				transform: translateX(0);
+				transform-origin: center;
+			}
+			14%, 20% {
+				transform: translateX(18.6%);
+				transform-origin: center;
+			}
+			34% {
+				transform: translateX(0);
+				transform-origin: center;
+			}
+			100% {
+				transform: translateX(0);
+				transform-origin: center;
+			}
+		}
+
+		@media (max-width: $grid-bp-mobile) {
+			width: 66vw;
+			transform: translate(-50.5%, -74%);
+			path.stroke {
+				stroke-width: 5.6px;
+			}
+
+			@media (min-width: $grid-bp-tablet-start) {
+				width: 60vw;
+				path.stroke {
+					stroke-width: 5px;
+				}
+			}
+		}
+	}
+
+	.visual__bottom-text {
+		position: absolute;
+		bottom: 4.1vw;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 1.5vw;
+
+		@media (max-width: $grid-bp-mobile) {
+			bottom: 12vw;
+			font-size: 4.5vw;
+
+			@media (min-width: $grid-bp-tablet-start) {
+				bottom: 10vw;
+				font-size: 3.5vw;
+			}
+		}
+	}
+
+	@media (max-width: $grid-bp-mobile) {
+		height: calc(var(--vh, 1vh) * 100);
+	}
+}
+
+// 메인 텍스트 영역
+
+.main-visual__text-area {
+	padding-top: 10vw;
+
+	&.active {
+		.main-title:first-child {
+			transform: translateY(0);
+		}
+		.main-title__box a {
+			transform: translateY(0);
+		}
+	}
+
+	a {
+		display: inline-block;
+	}
+
+	@media (max-width: $grid-bp-mobile) {
+		padding-top: 25vw;
+		&.mobile-motion-control {
+			.main-title:first-child {
+				transform: translateY(0);
+			}
+			.main-title__box a {
+				transform: translateY(0);
+			}
+		}
+
+		@media (min-width: $grid-bp-tablet-start) {
+			padding-top: 20vw;
+		}
+	}
+}
+
+.text-box {
+	display: inline-block;
+	overflow: hidden;
+	margin-bottom: 1vw;
+}
+
+.main-title {
+	font-size: 5.8vw;
+	line-height: 6.2vw;
+	margin-bottom: 1vw;
+	word-break: keep-all; // 단어별로 떨어트림
+
+	&:first-child {
+		transition: all 1.1s cubic-bezier(1,.15,.25,1);
+		transform: translateY(100%);
+		margin-bottom: initial;
+	}
+
+	@media (max-width: $grid-bp-mobile) {
+		font-size: 12vw;
+		line-height: 14.3vw;
+
+		@media (min-width: $grid-bp-tablet-start) {
+			font-size: 11vw;
+			line-height: 13vw;
+		}
+	}
+
+	&.under-line {
+		margin-bottom: 0.6vw;
+		background-image: linear-gradient(#000, #000);
+		background-repeat: no-repeat;
+		background-size: 0 0.3vw;  // mobile : under line 고정
+		background-position: 0 bottom;
+		transition: all .35s ease-in;
+
+		@media (max-width: $grid-bp-mobile) {
+			background-size: 100% 0.7vw;
+			margin-bottom: 1vw;
+
+			@media (min-width: $grid-bp-tablet-start) {
+				background-size: 100% 0.6vw;
+			}
+
+			&.line-mobile {
+				background-image: none;
+
+				span {
+					display: inline-block;
+					background-image: linear-gradient(#000, #000);
+					background-repeat: no-repeat;
+					background-position: -1vw bottom;
+					background-size: 100% 0.7vw;
+				}
+
+				span + span {
+					margin-top: 2vw;
+				}
+			}
+		}
+	}
+}
+
+.main-title__box {
+	display: inline-block;
+	cursor: pointer;
+	overflow: hidden;
+
+	&.active {
+		.under-line {
+			background-size: 100% 0.3vw;
+		}
+		.active-text {
+			width: 100%;
+		}
+	}
+
+	&.margin {
+		margin: 4vw 2vw 0 0;
+
+		@media (max-width: $grid-bp-mobile) {
+			margin: 15vw 4.5vw 0 0;
+
+			@media (min-width: $grid-bp-tablet-start) {
+				margin-top: 13vw;
+			}
+		}
+	}
+
+	a {
+		transition: all 1.5s cubic-bezier(1,.15,.25,1);
+		transform: translateY(100%);
+		transition-delay: 0.3s;
+		&.second, &.third {
+			transition-delay: 0.5s;
+		}
+	}
+
+	.active-text {
+		display: inline-block;
+		visibility: visible;
+		position: relative;
+		z-index: -1;
+		font-size: 1vw;
+		white-space: nowrap;
+		overflow: hidden;
+		width: 0;
+		transition: all .4s ease-in;
+		transition-delay: .37s;
+
+		@media (max-width: $grid-bp-mobile) {
+			font-size: 3.6vw;
+			width: 100%;
+
+			@media (min-width: $grid-bp-tablet-start) {
+				font-size: 2.8vw;
+				width: 100%;
+			}
+		}
+	}
+
+	@media (max-width: $grid-bp-mobile) {
+		&.margin-mobile {
+			margin-top: 3.5vw;
+
+			@media (min-width: $grid-bp-tablet-start) {
+				margin-top: 3vw;
+			}
+		}
+	}
+}
+

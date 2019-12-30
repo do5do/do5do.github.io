@@ -1,0 +1,257 @@
+// reset
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-rendering: optimizelegibility !important;
+}
+
+a {
+	display: block;
+	color: #000;
+	text-decoration: none;
+}
+
+ul, li {
+	list-style: none;
+}
+
+html, body {
+	font-family: 'Apple SD Gothic Neo', 'AppleSDGothicNeo';
+}
+
+// font
+
+.font-helve {
+	font-family: 'Helvetica Neue LT Pro';
+	font-weight: 900;
+	font-style: italic;
+}
+
+// container
+
+.container-wide {
+	max-width: 87vw;
+	width: 100%;
+	margin: 0 auto;
+	@media (max-width: $grid-bp-mobile) {
+		max-width: inherit;
+		padding: 0 5.56vw;
+		@media (min-width: $grid-bp-tablet-start) {
+			padding: 0 6vw;
+		}
+	}
+}
+
+.container {
+	max-width: 72.7vw;
+	width: 100%;
+	margin: 0 auto;
+	@media (max-width: $grid-bp-mobile) {
+		max-width: inherit;
+		padding: 0 5.56vw;
+
+		@media (min-width: $grid-bp-tablet-start) {
+			padding: 0 6vw;
+		}
+	}
+}
+
+.container-narrow {
+	max-width: 67.6vw;
+	width: 100%;
+	margin: 0 auto;
+	@media (max-width: $grid-bp-mobile) {
+		max-width: inherit;
+		padding: 0 5.56vw;
+		@media (min-width: $grid-bp-tablet-start) {
+			padding: 0 6vw;
+		}
+	}
+}
+
+// utility class
+
+img {
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+svg {
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.flex {
+	display: flex;
+}
+
+.position-relative {
+	position: relative;
+}
+
+.mobile-visible {
+	display: none;
+	@media (max-width: $grid-bp-mobile) {
+		display: block;
+	}
+}
+
+.mobile-hidden {
+	display: block;
+	@media (max-width: $grid-bp-mobile) {
+		display: none;
+	}
+}
+
+// layout start
+
+// section 시작 패딩
+.start-pd-top {
+	padding-top: 17vw;
+	@media (max-width: $grid-bp-mobile) {
+		padding-top: 40vw;
+		@media (min-width: $grid-bp-tablet-start) {
+			padding-top: 32vw;
+		}
+	}
+}
+
+// contents paragraph
+
+.title {
+	font-size: 2vw;
+	padding-bottom: 0.6vw;
+
+	@media (max-width: $grid-bp-mobile) {
+		font-size: 6.5vw;
+		padding-bottom: 2.8vw;
+
+		@media (min-width: $grid-bp-tablet-start) {
+			font-size: 5.5vw;
+			padding-bottom: 1.6vw;
+		}
+	}
+}
+
+.sub-title {
+	font-size: 1vw;
+	font-weight: $bold;
+	padding-bottom: 1.5vw;
+
+	@media (max-width: $grid-bp-mobile) {
+		font-size: 4vw;
+		padding-bottom: 5.4vw;
+
+		@media (min-width: $grid-bp-tablet-start) {
+			font-size: 2.8vw;
+			padding-bottom: 4vw;
+		}
+	}
+}
+
+.description {
+	color: $gray-des;
+	font-size: 0.83vw;
+	line-height: 1.4vw;
+	font-weight: $regular;
+
+	@media (max-width: $grid-bp-mobile) {
+		font-size: 3.8vw;
+		line-height: 6.2vw;
+
+		@media (min-width: $grid-bp-tablet-start) {
+			font-size: 2.4vw;
+			line-height: 4vw;
+		}
+	}
+}
+
+.paragraph + .paragraph {
+	margin-top: 4.6vw;
+
+	@media (max-width: $grid-bp-mobile) {
+		margin-top: 14vw;
+		@media (min-width: $grid-bp-tablet-start) {
+			margin-top: 12vw;
+		}
+	}
+}
+
+.bold {
+	font-weight: $bold;
+}
+
+.text-line {
+	position: relative; // 링크를 noise bg 보다 위로 올려줌
+	z-index: 2;
+	text-decoration: underline;
+}
+
+// page title
+
+.page-title {
+	font-size: 6vw;
+
+	@media (max-width: $grid-bp-mobile) {
+		font-size: 12vw;
+
+		@media (min-width: $grid-bp-tablet-start) {
+			font-size: 10vw;
+		}
+	}
+}
+
+.page-sub-title {
+	font-size: 1.2vw;
+	line-height: 1.7vw;
+	font-weight: $bold;
+
+	@media (max-width: $grid-bp-mobile) {
+		font-size: 4vw;
+		line-height: 5vw;
+
+		@media (min-width: $grid-bp-tablet-start) {
+			font-size: 3vw;
+		}
+	}
+}
+
+// device
+
+.device-auto {
+	border: .5vw solid #000;
+	border-radius: 2vw;
+	width: 19vw;
+	height: auto;
+	overflow: hidden;
+	box-shadow: 20px 26px 80px 0 rgba(0, 0, 0, 0.13);
+	background-size: cover;
+
+	@media (max-width: $grid-bp-mobile) {
+		border: 1.6vw solid #000;
+		border-radius: 8vw;
+		width: 66vw;
+
+		@media (min-width: $grid-bp-tablet-start) {
+			border: 1.3vw solid #000;
+			border-radius: 6.6vw;
+			width: 56vw;
+		}
+	}
+}
+
+// 디바이스 뒤로 이미지가 흘러 넘칠때
+.device-fixed {
+	border: .5vw solid #000;
+	border-radius: 2vw;
+	width: 19vw;
+	height: 40vw;
+	box-shadow: 20px 26px 80px 0 rgba(0, 0, 0, 0.13);
+
+	img {
+		border-radius: 1.5vw;
+	}
+}

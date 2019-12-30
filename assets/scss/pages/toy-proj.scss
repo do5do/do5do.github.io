@@ -1,0 +1,141 @@
+.toy-sub-title {
+	position: absolute;
+	top: 1.7vw;
+	left: 54vw;
+
+	@media (max-width: $grid-bp-mobile) {
+		position: static;
+		padding-top: 2.2vw;
+		@media (min-width: $grid-bp-tablet-start) {
+			padding-top: 1vw;
+		}
+	}
+}
+
+// toy contents section
+
+.toy-contents {
+	.device-box {
+		display: flex;
+		align-items: flex-start;
+
+		@media (max-width: $grid-bp-mobile) {
+			flex-direction: column;
+
+			@media (min-width: $grid-bp-tablet-start) {
+				&.start-pd-top {
+					padding-top: 24vw;
+				}
+			}
+		}
+	}
+
+	.device-auto {
+		margin-left: 3vw;
+		background: url(/images/toy-todo.png) no-repeat center;
+		background-size: cover;
+
+		@media (max-width: $grid-bp-mobile) {
+			margin: auto;
+		}
+	}
+
+	.paragraph {
+		width:31vw;
+		margin: 2vw 2vw 0 auto;
+
+		.title {
+			text-indent: -.12vw;
+		}
+
+		.sub-title {
+			display: inline-block;
+		}
+
+		.pd-top {
+			padding: 2.4vw 0 0 0;
+			@media (max-width: $grid-bp-mobile) {
+				padding-top: 6vw;
+			}
+		}
+
+		@media (max-width: $grid-bp-mobile) {
+			width: 100%;
+			margin: 24vw 0 0 0;
+
+			@media (min-width: $grid-bp-tablet-start) {
+				margin: 20vw 0 0 0;
+			}
+		}
+	}
+
+	.device-box:nth-child(2) {
+		padding-top: 15vw;
+
+		@media (max-width: $grid-bp-mobile) {
+			padding-top: 0;
+		}
+
+		.paragraph {
+			margin: 0.6vw 0 0 3vw;
+			width: 27.5vw;
+
+			@media (max-width: $grid-bp-mobile) {
+				width: 100%;
+				margin: 24vw 0 0 0;
+				order: 1;
+
+				@media (min-width: $grid-bp-tablet-start) {
+					margin: 20vw 0 0 0;
+				}
+			}
+		}
+
+		.device-auto {
+			margin: 0 4vw 0 auto;
+			background: url(/images/toy-textground.png) no-repeat center;
+			background-size: cover;
+
+			@media (max-width: $grid-bp-mobile) {
+				margin: 24vw auto 0 auto;
+			}
+		}
+	}
+
+	.device-box:nth-child(3) {
+		padding-top: 12vw;
+
+		.device-auto.left {
+			background: url(/images/toy-textground2.png) no-repeat center;
+			background-size: cover;
+			margin-left: 9vw;
+
+			@media (max-width: $grid-bp-mobile) {
+				margin-left: 0;
+			}
+		}
+
+		.device-auto.right {
+			background: url(/images/toy-textground3.png) no-repeat center;
+			background-size: cover;
+			margin: 13vw 9vw 0 auto;
+
+			@media (max-width: $grid-bp-mobile) {
+				margin: 24vw 0 0 auto;
+			}
+		}
+
+		@media (max-width: $grid-bp-mobile) {
+			padding-top: 24vw;
+		}
+	}
+
+	.continue-text {
+		text-align: center;
+		padding-top: 10vw;
+
+		@media (max-width: $grid-bp-mobile) {
+			padding-top: 24vw;
+		}
+	}
+}

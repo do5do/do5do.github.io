@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "ctg": ["All", "Brand Experience", "User Experience / User Interface"],
+      "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
+      "tag": "BX/UXUI",
+      "title": "Ticket X"
+    },
+    {
+      "id": 2,
+      "ctg": ["All", "Brand Experience", "illustration"],
+      "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
+      "tag": "bx/illustration",
+      "title": "toast"
+    },
+    {
+      "id": 3,
+      "ctg": ["All", "Graphic"],
+      "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
+      "tag": "GRAPHIC",
+      "title": "transition"
+    },
+    {
+      "id": 4,
+      "ctg": ["All", "User Experience / User Interface"],
+      "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
+      "tag": "BX/UXUI",
+      "title": "transform"
+    },
+    {
+      "id": 5,
+      "ctg": ["All", "illustration"],
+      "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
+      "tag": "bx/illustration",
+      "title": "lilaland"
+    },
+    {
+      "id": 6,
+      "ctg": ["All", "Graphic", "illustration"],
+      "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
+      "tag": "GRAPHIC",
+      "title": "true"
+    }
+  ]
+}

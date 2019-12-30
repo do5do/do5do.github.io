@@ -1,0 +1,53 @@
+footer {
+	margin-top: auto;
+
+	.footer-inner {
+		margin-top: 10vw;
+		border-top: 0.07vw solid $gray-ft;
+		text-align: center;
+		padding: 2.9vw 0 3vw 0;
+
+		&.footer-margin {
+			margin-top: 0;
+		}
+
+		.ft-logo {
+			height: 1.7vw;
+		}
+
+		.ft-copy {
+			font-size: 0.74vw;
+			padding-top: 1.15vw;
+			color: $gray-des;
+		}
+
+		@media (max-width: $grid-bp-mobile) {
+			margin-top: 30vw;
+			border-width: 0.1vw;
+			padding: 9vw 0 10vw 0;
+
+			@media (min-width: $grid-bp-tablet-start) {
+				margin-top: 26vw;
+				padding: 6vw 0 7vw 0;
+			}
+
+			.ft-logo {
+				height: 5.6vw;
+
+				@media (min-width: $grid-bp-tablet-start) {
+					height: 4vw;
+				}
+			}
+
+			.ft-copy {
+				font-size: 3vw;
+				padding-top: 3.6vw;
+
+				@media (min-width: $grid-bp-tablet-start) {
+					font-size: 2vw;
+					padding-top: 2.6vw;
+				}
+			}
+		}
+	}
+}
