@@ -47,7 +47,7 @@
 					@filter="filterOption = arguments[0]"
 				>
 					<div v-for="(list, index) in workList" :key="index">
-						<nuxt-link :to="{name: 'work-wd', params: {wd: list.idString}}">
+						<nuxt-link :to="{name: 'work-wd', params: {wd: list.id}}">
 							<div class="list-content">
 								<div class="img-box">
 									<img :src="list.thumbnail">
@@ -74,6 +74,14 @@
 			return {
 				workList: workListData.data
 			}
+		},
+		created () {
+			// 워크리스트 데이터 배열 순서 상관 없이 id 순 정렬
+			let lists = this.workList;
+			lists.sort((a,b) => {
+				return a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
+			});
+			this.workList = lists;
 		},
 		data () {
 			return {

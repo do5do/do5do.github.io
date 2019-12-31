@@ -102,6 +102,10 @@
 			height: auto;
 			margin-left: -50vw;
 			left: 50%;
+
+			@media (max-width:$grid-bp-tablet-start) {
+
+			}
 		}
 
 		img {
@@ -150,6 +154,11 @@
 
 		&:first-child {
 			margin: auto 0;
+		}
+
+		&.disabled {
+			opacity: 0.2;
+			cursor: default;
 		}
 
 		@media (max-width: $grid-bp-mobile) {

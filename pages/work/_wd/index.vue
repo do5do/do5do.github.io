@@ -58,9 +58,14 @@
 
 					<!-- work detail footer -->
 					<div class="wd-footer items">
-						<p class="font-helve wd-footer__text">
-							<nuxt-link to="">next</nuxt-link>
-						</p>
+						<template v-if="workNumber !== workDataList">
+							<p class="font-helve wd-footer__text">
+								<nuxt-link :to="{name: 'work-wd', params: {wd: workNumber + 1}}">next</nuxt-link>
+							</p>
+						</template>
+						<template v-else>
+							<p class="font-helve wd-footer__text disabled">next</p>
+						</template>
 						<p class="font-helve wd-footer__text">
 							<nuxt-link to="/work">view list</nuxt-link>
 						</p>
@@ -80,14 +85,33 @@
 		// json 비동기로 불러오기
 		async asyncData({params}) {
 			let {data: workDetailData} = await axios.get(process.env.API_SERVER_ADDRESS + '/data/work-detail.json')
-			console.log(params.wd);
 			// 데이터를 참조할 수 있게 변수에 저장
 			return {
-				workDetail: workDetailData.data[0]
+				workNumber: Number(params.wd),
+				workDataList: workDetailData.data.length,
+				workDetail: workDetailData.data,
 			}
 		},
 		components: {
 			ticketX
+		},
+		created () {
+			// 리스트의 id를 가져와서 상세정보의 id를 비교하여 데이터 출력.
+			let params = this.workNumber;
+			let data = {};
+			let detail = this.workDetail.forEach((item) => {
+				if (item.id === params) {
+					data = item;
+				}
+			});
+			this.workDetail = data;
+
+			// client 정보 true, false
+			if (this.workDetail.static.client === '' || this.workDetail.static.client === null) {
+				this.clientYN = false;
+			} else {
+				this.clientYN = true;
+			}
 		},
 		data () {
 			return {
@@ -110,14 +134,6 @@
 					}
 				},
 				clientYN : false
-			}
-		},
-		created () {
-			// client 정보 true, false
-			if (this.workDetail.static.client === '' || this.workDetail.static.client === null) {
-				this.clientYN = false;
-			} else {
-				this.clientYN = true;
 			}
 		}
 	}
