@@ -2,6 +2,7 @@
   "data": [
     {
       "id": 1,
+      "idString": "ticketX",
       "ctg": ["All", "Brand Experience", "User Experience / User Interface"],
       "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
       "tag": "BX/UXUI",
@@ -9,6 +10,7 @@
     },
     {
       "id": 2,
+      "idString": "ticketX",
       "ctg": ["All", "Brand Experience", "illustration"],
       "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
       "tag": "bx/illustration",
@@ -16,6 +18,7 @@
     },
     {
       "id": 3,
+      "idString": "ticketX",
       "ctg": ["All", "Graphic"],
       "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
       "tag": "GRAPHIC",
@@ -23,6 +26,7 @@
     },
     {
       "id": 4,
+      "idString": "ticketX",
       "ctg": ["All", "User Experience / User Interface"],
       "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
       "tag": "BX/UXUI",
@@ -30,6 +34,7 @@
     },
     {
       "id": 5,
+      "idString": "ticketX",
       "ctg": ["All", "illustration"],
       "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
       "tag": "bx/illustration",
@@ -37,6 +42,7 @@
     },
     {
       "id": 6,
+      "idString": "ticketX",
       "ctg": ["All", "Graphic", "illustration"],
       "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
       "tag": "GRAPHIC",
