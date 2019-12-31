@@ -32,7 +32,7 @@
 			</figure>
 
 
-			<!-- contents layout : img-top, text-bottom 1 -->
+			<!-- contents image : img-top, text-bottom -->
 			<div class="wd-contents items">
 				<figure class="wd-image" :style="`width: ${imgWidthTop}`">
 					<img src="/work-detail/ticketX/application-1.jpg" alt="어플리케이션">
@@ -46,7 +46,7 @@
 				</div>
 			</div>
 
-			<!-- contents layout : img-bottom, text-top 2 -->
+			<!-- contents text : img-bottom, text-top -->
 			<div class="wd-contents contents__img-bottom items">
 				<div class="wd-paragraph" :style="`width: ${textWidth}`">
 					<p class="sub-title">Design Keyword</p>

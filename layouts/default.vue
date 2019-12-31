@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <div class="noise-bg"></div>
+    <div class="noise-bg" :class="{'wd-noise-bg': wdNoiseBg}"></div>
     <theHeader></theHeader>
     <nuxt/>
     <theFooter v-if="footerShow"></theFooter>
@@ -19,14 +19,46 @@
     data () {
       return {
         footerShow: true,
+        wdNoiseBg: false,
       }
     },
     created () {
+      if (process.client) {
+        // work detail body overflow 조절
+        if (matchMedia("(max-width:1000px)").matches) {
+          // 모바일 버전
+          if (this.$route.name === 'work-wd') {
+            document.body.style.overflow = 'auto';
+          }
+        } else {
+          // pc 버전
+          if (this.$route.name === 'work-wd') {
+            document.body.style.overflow = 'hidden';
+          } else {
+            document.body.style.overflow = 'auto';
+          }
+        }
+      }
     },
     watch: {
       $route () {
         // footer, bg 실시간 감지
         this.detectWorkWid();
+
+        // work detail body overflow 조절
+        if (matchMedia("(max-width:1000px)").matches) {
+          // 모바일 버전
+          if (this.$route.name === 'work-wd') {
+            document.body.style.overflow = 'auto';
+          }
+        } else {
+          // pc 버전
+          if (this.$route.name === 'work-wd') {
+            document.body.style.overflow = 'hidden';
+          } else {
+            document.body.style.overflow = 'auto';
+          }
+        }
       }
     },
     mounted () {
@@ -51,24 +83,29 @@
       handleWorkWidPC () {
         if (this.$route.name === 'work-wd' || this.$route.name === 'wd-style-guide' ) {
           this.footerShow = false;
+          this.wdNoiseBg = true;
         } else {
           this.footerShow = true;
+          this.wdNoiseBg = false;
         }
       },
       // footer show/hide
       handleWorkWidMobile () {
         if (this.$route.name === 'work-wd') {
           this.footerShow = true;
+          this.wdNoiseBg = true;
+        } else {
+          this.wdNoiseBg = false;
         }
       },
       // media 감지
       detectWorkWid () {
         if (matchMedia("(max-width:1000px)").matches) {
           // 모바일 버전
-          this.handleWorkWidMobile ();
+          this.handleWorkWidMobile();
         } else {
           // pc 버전
-          this.handleWorkWidPC ();
+          this.handleWorkWidPC();
         }
       }
     }
@@ -87,7 +124,6 @@
 
   .noise-bg {
     position: absolute;
-    //z-index: 1;
     background:url(/images/body-noise.png) repeat center;
     background-size: 180px;
     width: 100%;
@@ -95,7 +131,17 @@
     @media (max-width: $grid-bp-mobile) {
       opacity: 0.6;
     }
-  }
 
+    &.wd-noise-bg {
+      background: none;
+      @media (max-width: $grid-bp-mobile) {
+        position: absolute;
+        background:url(/images/body-noise.png) repeat center;
+        background-size: 180px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 </style>
 

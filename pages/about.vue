@@ -73,7 +73,7 @@
 					</div>
 				</div>
 				<figure class="about-img">
-					<img src="~/static/images/about-illust.jpg">
+					<img src="/images/about-illust.jpg">
 				</figure>
 				<div class="about-info__bottom">
 					<div class="paragraph">
@@ -112,7 +112,6 @@
 			}
 		},
 		mounted () {
-			//this.logoMoving = true;
 			setTimeout ( () => {
 				this.logoMoving = true;
 			}, 100);

@@ -1,3 +1,49 @@
+// swiper
+.work-detail__box {
+	.swiper-container {
+		width: 100%;
+		height: calc(var(--vh, 1vh) * 100);
+
+		@media (max-width: $grid-bp-mobile) {
+			height: 100%;
+		}
+	}
+
+	.swiper-slide {
+		width: max-content !important;
+
+		&:before {
+			display: block;
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			background:url(/images/body-noise.png) repeat center;
+			background-size: 180px;
+			width: 100%;
+			height: 100%;
+		}
+
+		@media (max-width: $grid-bp-mobile) {
+			width: 100% !important;
+			height: auto !important;
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	.swiper-scrollbar {
+		background: transparent;
+	}
+
+	.swiper-scrollbar-drag {
+		background: #000;
+		border-radius: 0;
+	}
+}
+
 // main description
 
 .main-description__box {

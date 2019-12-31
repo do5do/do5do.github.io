@@ -2,7 +2,7 @@
 	<footer>
 		<div class="footer-inner" :class="{'footer-margin': footerMarginNone}">
 			<div class="ft-logo">
-				<img src="~/static/images/logo-type.svg" alt="로고 타입">
+				<img src="/images/logo-type.svg" alt="로고 타입">
 			</div>
 			<p class="ft-copy">© 2019, dododo. All Rights Reserved.</p>
 		</div>

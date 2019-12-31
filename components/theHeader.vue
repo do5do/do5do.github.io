@@ -13,7 +13,7 @@
 					</div>
 					<transition name="logoType">
 						<div v-if="logoType" class="logo-type">
-							<img src="~/static/images/logo-type.svg" alt="로고 타입">
+							<img src="/images/logo-type.svg" alt="로고 타입">
 						</div>
 					</transition>
 				</nuxt-link>
@@ -56,7 +56,7 @@
 			<div class="mobile-nav__inner">
 				<div @click="handleNavMobile()">
 					<nuxt-link to="/" class="mobile-logo-type">
-						<img src="~/static/images/logo-type.svg" alt="로고 타입">
+						<img src="/images/logo-type.svg" alt="로고 타입">
 					</nuxt-link>
 				</div>
 				<ul class="mobile-nav__ul">
@@ -165,6 +165,7 @@
 				if (this.$route.name === 'index') {
 					this.headerMain = true;
 					this.isScroll = false;
+					this.mainText = true;
 				} else if (this.$route.name === 'work-wd') {
 					this.headerMain = false;
 					this.isScroll = true;
@@ -218,7 +219,7 @@
 					this.logoType = false;
 					this.emojiText = 'touch the text';
 				}
-			}
+			},
 		}
 	}
 </script>

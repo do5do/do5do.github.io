@@ -16,7 +16,7 @@
 		<section class="toy-contents start-pd-top">
 			<div class="device-box">
 				<div class="device-auto">
-					<img src="~/static/images/toy-todo.png" alt="todo 이미지">
+					<img src="/images/toy-todo.png" alt="todo 이미지">
 				</div>
 				<div class="paragraph">
 					<p class="title font-helve">Todo list</p>
@@ -45,15 +45,15 @@
 					<p class="sub-title pd-top">mobile / chrome, safari</p>
 				</div>
 				<div class="device-auto">
-					<img src="~/static/images/toy-textground.png" alt="textground 이미지">
+					<img src="/images/toy-textground.png" alt="textground 이미지">
 				</div>
 			</div>
 			<div class="device-box">
 				<div class="device-auto left">
-					<img src="~/static/images/toy-textground2.png" alt="textground 2">
+					<img src="/images/toy-textground2.png" alt="textground 2">
 				</div>
 				<div class="device-auto right">
-					<img src="~/static/images/toy-textground3.png" alt="textground 3">
+					<img src="/images/toy-textground3.png" alt="textground 3">
 				</div>
 			</div>
 			<p class="sub-title continue-text">to be continued</p>

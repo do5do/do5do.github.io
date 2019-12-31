@@ -34,8 +34,7 @@ module.exports = {
   },
   // API 주소 전역 선언
   env: {
-    API_SERVER_ADDRESS: 'http://localhost:3000/' // 사무실
-    //API_SERVER_ADDRESS: 'http://192.168.0.6:3333/'  // 집
+    API_SERVER_ADDRESS: 'http://localhost:3000/'
 
     // 배포용
     //API_SERVER_ADDRESS: 'https://do5do.github.io'  // Git Page
@@ -54,6 +53,7 @@ module.exports = {
     ],
   },
   plugins: [
-    {src: '~/plugins/vue-isotope.js', ssr: false}
+    {src: '~/plugins/vue-isotope.js', ssr: false},
+    {src: '~/plugins/vue-awesome-swiper.js', ssr: false}
   ]
 }
