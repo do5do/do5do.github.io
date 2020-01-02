@@ -138,15 +138,6 @@
 			window.addEventListener('resize', () => {
 				this.detectHeader();
 			});
-
-			// scroll 감지
-			// if (matchMedia("(max-width:1000px)").matches) {
-			// 	// 1000px 이하 모바일 버전
-			// 	this.mainScrollChangeMobile();
-			// } else {
-			// 	// 1000px 초과 pc 버전
-			// 	this.mainScrollChangePC();
-			// }
 		},
 		methods: {
 			// mobile nav control

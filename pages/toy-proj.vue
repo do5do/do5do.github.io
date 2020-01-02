@@ -21,7 +21,7 @@
 				<div class="paragraph">
 					<p class="title font-helve">Todo list</p>
 					<p class="sub-title text-line">
-						<a href="https://do5do.github.io/todo/" target="_blank">try it</a>
+						<a href="https://doittrue.github.io/todo/" target="_blank">try it</a>
 					</p>
 					<p class="description">
 						하루 업무 리스트를 종이에 관리하던 친구가 있었습니다. 하루가 끝나고 제때 버려지면 다행이지, 온 책상과 바닥을 쓸며 돌아다니는 너덜 해진 종이들을 보며 매일 쓰고 리셋 시킬 수 있는 할 일 리스트가 있으면 좋겠다는 생각에 웹으로 구현하게 되었습니다.<br><br>
@@ -35,7 +35,7 @@
 				<div class="paragraph">
 					<p class="title font-helve">My textground</p>
 					<p class="sub-title text-line">
-						<a href="https://do5do.github.io/textground/" target="_blank">try it</a>
+						<a href="https://doittrue.github.io/textground/" target="_blank">try it</a>
 					</p>
 					<p class="description">
 						명언을 좋아하는 저는 늘 메모를 해둡니다. 그중 지금 보고 싶은 명언들을 뽑아 핸드폰 배경으로 사용하고 싶을 때가 있는데, 늘 언제 한번 만들어 봐야지 생각만 하고 그냥 넘어가곤 했죠. 그러다 문득 내가 원하는 대로 커스텀하고, 디바이스 사이즈에 맞춰서 저장해주는 게 있으면 재밌겠다 싶어 만들어보게 되었습니다. my textground는 text + background로 제가 만든 조잡한 합성어입니다. 느낌 오는 그대로 나만의 텍스트 배경인 거죠. 후후... 네이밍 추천받습니다.<br><br>

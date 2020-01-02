@@ -99,6 +99,7 @@
 			// 리스트의 id를 가져와서 상세정보의 id를 비교하여 데이터 출력.
 			let params = this.workNumber;
 			let data = {};
+			// 메모리 줄이기 위해 변수에 담음
 			let detail = this.workDetail.forEach((item) => {
 				if (item.id === params) {
 					data = item;
@@ -133,12 +134,20 @@
 						}
 					}
 				},
+				// client 정보
 				clientYN : false
 			}
+		},
+		mounted () {
+			// let fontSizeMultiplier = this.$store.state.windowSizes.y <= 750 ? this.$store.state.windowSizes.y/750:1;
+			// document.documentElement.style.setProperty('--font-size-multiplier', fontSizeMultiplier);
+			// console.log(fontSizeMultiplier);
 		}
 	}
 </script>
 
 <style src="~/assets/scss/pages/work-detail.scss" lang="scss">
-
+	:root {
+		font-size: calc(1vw + 1vh + .5vmin);
+	}
 </style>
