@@ -19,6 +19,6 @@ tablet 비율 조정 : 580px ~ 999px
 only mobile : ~579px
  */
 
-$grid-bp-pro-port: 1024px; // ipad pro 세로모드 => mobile tablet size
+$grid-bp-pro-port: 1024px; // ipad pro 세로모드 => work detail 페이지에 패딩 제외, pc와 동일
 $grid-bp-mobile: 1000px; // mobile view max point
 $grid-bp-tablet-start: 580px; // mobile view => tablet size

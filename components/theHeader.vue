@@ -110,10 +110,11 @@
 			}
 		},
 		created () {
-			this.detectHeader();
-
 			// process.client는 가상 돔이 그려진 후 실행시킴
 			if (process.client) {
+				// header 감지
+				this.detectHeader();
+
 				// scroll 감지
 				window.addEventListener('scroll', () => {
 					if (matchMedia("(max-width:1000px)").matches) {
@@ -172,7 +173,6 @@
 				if (this.$route.name === 'index') {
 					this.headerMain = true;
 					this.isScroll = false;
-					this.mainText = true;
 				} else {
 					this.headerMain = false;
 					this.isScroll = false;
