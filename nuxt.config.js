@@ -34,10 +34,10 @@ module.exports = {
   },
   // API 주소 전역 선언
   env: {
-    API_SERVER_ADDRESS: 'http://localhost:3000/'
+    //API_SERVER_ADDRESS: 'http://localhost:3000/'
 
     // 배포용 Git Page
-    //API_SERVER_ADDRESS: 'https://do5do.github.io'
+    API_SERVER_ADDRESS: 'https://do5do.github.io'
   },
   /*
   ** Customize the progress bar color
