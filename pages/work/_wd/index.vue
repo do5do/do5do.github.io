@@ -135,19 +135,12 @@
 					}
 				},
 				// client 정보
-				clientYN : false
+				clientYN : false,
 			}
-		},
-		mounted () {
-			// let fontSizeMultiplier = this.$store.state.windowSizes.y <= 750 ? this.$store.state.windowSizes.y/750:1;
-			// document.documentElement.style.setProperty('--font-size-multiplier', fontSizeMultiplier);
-			// console.log(fontSizeMultiplier);
 		}
 	}
 </script>
 
 <style src="~/assets/scss/pages/work-detail.scss" lang="scss">
-	:root {
-		font-size: calc(1vw + 1vh + .5vmin);
-	}
+
 </style>

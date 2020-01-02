@@ -157,7 +157,7 @@
 					this.headerMain = true;
 					this.isScroll = false;
 					this.mainText = true;
-				} else if (this.$route.name === 'work-wd') {
+				} else if (this.$route.name === 'work-wd' || this.$route.params === `work/${this.$route.params.wd}`) {
 					this.headerMain = false;
 					this.isScroll = true;
 				} else {
