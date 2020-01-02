@@ -5,7 +5,7 @@
 				<section class="work-detail">
 					<!-- main description area -->
 					<div class="main-description__box items">
-						<div class="wd-paragraph">
+						<div class="wd-paragraph pd-bottom">
 							<p class="title font-helve">{{workDetail.static.title}}</p>
 							<p class="description">
 								{{workDetail.static.ctg}}<br>

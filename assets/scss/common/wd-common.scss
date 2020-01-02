@@ -1,45 +1,4 @@
-.work-detail {
-	display: flex;
-	//overflow-x: scroll;
-	justify-content: flex-start;
-	width: max-content;
-	height: 100vh;
-	padding: 10vw 0 7vw 6.3vw;
-
-	@media (max-width: $grid-bp-pro-port) {
-		padding: 36vw 0 30vw 6.3vw;
-		width: 100%;
-	}
-
-	@media (max-width: $grid-bp-mobile) {
-		flex-direction: column;
-		flex-wrap: wrap;
-		height: auto;
-		padding: 40vw 5.56vw 0 5.56vw;
-		width: 100%;
-
-		@media (min-width: $grid-bp-tablet-start) {
-			padding: 24vw 6vw 0 6vw;
-		}
-	}
-
-	.items {
-		position: relative;
-		z-index: -1;
-		flex: none;  // 0 0 auto 와 동일
-	}
-
-	// 아이템들 기본 마진 설정
-	.items + .items {
-		margin-left: 12vw;
-
-		@media (max-width: $grid-bp-mobile) {
-			margin-left: 0;
-			margin-top: 18vw;
-		}
-	}
-}
-
+// work detail paragraph
 .wd-paragraph {
 	width: 26vw;  // work detail paragraph pc 기본 넓이
 
@@ -52,26 +11,11 @@
 
 		@media (max-width: $grid-bp-mobile) {
 			width: 100%;
-			padding-top: 6vw;
-		}
-	}
-
-	.title {
-		font-size: 2.4vw;
-		padding: 2vw 0 0.4vw 0;
-
-		@media (max-width: $grid-bp-mobile) {
-			font-size: 10vw;
-			padding-bottom: 2.8vw;
-			@media (min-width: $grid-bp-tablet-start) {
-				font-size: 8vw;
-				padding-bottom: 1.2vw;
-			}
 		}
 	}
 
 	.sub-title {
-		padding-bottom: 1vw;
+		padding-bottom: 2vh;
 
 		@media (max-width: $grid-bp-mobile) {
 			font-size: 4.4vw;
@@ -105,85 +49,23 @@
 
 // image layout : height full
 .wd-image {
-	width: fit-content;
+	height: 100%;
 	img {
 		width: auto;
 	}
 
 	@media (max-width: $grid-bp-mobile) {
-		padding-top: 20vw;
-
 		img {
 			width: 100%;
-		}
-	}
-}
-
-// contents image : img-top, text-bottom
-.wd-contents {
-	&.items {
-		flex: auto;
-		height: 100%;
-	}
-
-	@media (max-width: $grid-bp-mobile) {
-		padding-top: 20vw;
-	}
-
-	// image layout
-	.wd-image {
-		width: 53vw;  // contentsImgTop
-		img {
-			width: 100%;
-			height: 100%;
-		}
-
-		@media (max-width: $grid-bp-mobile) {
-			width: 100% !important;
-			padding-top: 0;
-		}
-	}
-
-	// text layout
-	.wd-paragraph {
-		padding-top: 3vw;
-		width: 100%;
-
-		@media (max-width: $grid-bp-mobile) {
-			padding-top: 6vw;
-		}
-	}
-}
-
-// contents text : img-bottom. text-top
-.contents__img-bottom {
-	display: flex;
-	flex-flow: column wrap;
-
-	.wd-paragraph {
-		padding-top: initial;
-		width: 26vw;
-		@media (max-width: $grid-bp-mobile) {
-			width: 100%;
-		}
-	}
-
-	.wd-image {
-		width: 43vw;  // contentsImgBottom
-		margin-top: auto;
-		@media (max-width: $grid-bp-mobile) {
-			width: 100% !important;
-			padding-top: 16vw;
 		}
 	}
 }
 
 // 컨포넌트 공통요소
-
 .wd-body {
 	display: flex;
 	justify-content: flex-start;
-	width: auto;
+	width: 100%;
 	height: 100%;
 	padding-left: 2vw;
 
@@ -196,20 +78,19 @@
 		flex-wrap: wrap;
 		height: auto;
 		width: 100%;
-		padding: 4vw 0 0 0;
+		padding: 8vw 0 0 0;
 
 		@media (min-width: $grid-bp-tablet-start) {
 		}
 	}
 
 	.body-items {
-		position: relative;
-		z-index: -1;
 		flex: none;  // 0 0 auto 와 동일
 		margin-left: 14vw;
 
 		@media (max-width: $grid-bp-mobile) {
-			margin-left: initial;
+			margin-left: 0;
+			margin-top: 20vw;
 		}
 	}
 
@@ -217,6 +98,63 @@
 		margin-left: 4vw;
 		@media (max-width: $grid-bp-mobile) {
 			margin-left: 0;
+			margin-top: 6vw;
+		}
+	}
+
+	// contents image : img-top, text-bottom
+	.wd-contents {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+
+		// image layout
+		.wd-image {
+			width: 100%;
+			height: 80%;
+			img {
+				width: auto;
+				height: 100%;
+			}
+
+			@media (max-width: $grid-bp-mobile) {
+				height: auto;
+				padding-top: 0;
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+		// text layout
+		.wd-paragraph {
+			padding-top: 4vh;
+			width: 100%;
+
+			@media (max-width: $grid-bp-mobile) {
+
+			}
+		}
+
+		// contents text : img-bottom. text-top
+		&.contents-image {
+			.wd-paragraph {
+				padding-top: 0;
+				width: 26vw;
+				@media (max-width: $grid-bp-mobile) {
+					width: 100%;
+				}
+			}
+
+			.wd-image {
+				height: 60%;
+				margin-top: auto;
+				@media (max-width: $grid-bp-mobile) {
+					width: 100%;
+					padding-top: 15vw;
+				}
+			}
 		}
 	}
 }

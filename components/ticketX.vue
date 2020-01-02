@@ -1,21 +1,21 @@
 <template>
 	<div class="wd-body">
 		<!-- contents text : img-bottom, text-top -->
-		<div class="wd-contents contents__img-bottom body-items">
+		<div class="wd-contents contents-image body-items">
 			<div class="wd-paragraph">
 				<p class="sub-title">{{title}}</p>
 				<p class="description"
 				   v-html="description"
 				></p>
 			</div>
-			<figure class="wd-image" :style="`width: ${imgBottom}`">
+			<figure class="wd-image">
 				<img :src="image" alt="포트폴리오 이미지">
 			</figure>
 		</div>
 
 		<!-- contents image : img-top, text-bottom -->
 		<div class="wd-contents body-items">
-			<figure class="wd-image" :style="`width: ${imgTop}`">
+			<figure class="wd-image">
 				<img :src="contentsImgTop" alt="포트폴리오 이미지">
 			</figure>
 			<!-- text layout : 최대 2줄 -->
@@ -117,12 +117,6 @@
 			imgFull04: {
 				type: String,
 			},
-		},
-		data () {
-			return {
-				imgBottom: '47vw',
-				imgTop: '',
-			}
 		}
 	}
 </script>

@@ -169,8 +169,11 @@
 			handleHeaderMobile () {
 				if (this.$route.name === 'index') {
 					this.headerMain = true;
+					this.isScroll = false;
+					this.mainText = true;
 				} else {
 					this.headerMain = false;
+					this.isScroll = false;
 				}
 			},
 			detectHeader () {
