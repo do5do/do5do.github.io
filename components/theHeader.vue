@@ -110,6 +110,8 @@
 			}
 		},
 		created () {
+			this.detectHeader();
+
 			// process.client는 가상 돔이 그려진 후 실행시킴
 			if (process.client) {
 				// scroll 감지

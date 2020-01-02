@@ -69,7 +69,7 @@
 	export default {
 		// json 비동기로 불러오기
 		async asyncData() {
-			let {data: workListData} = await axios.get(process.env.API_SERVER_ADDRESS + '/data/work-list.json')
+			let {data: workListData} = await axios.get(process.env.API_SERVER_ADDRESS + '/data/work-list.json');
 			// 데이터를 참조할 수 있게 변수에 저장
 			return {
 				workList: workListData.data
