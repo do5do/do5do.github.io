@@ -81,7 +81,7 @@
       },
       // footer show/hide
       handleWorkWidPC () {
-        if (this.$route.name === 'work-wd' || this.$route.name === 'wd-style-guide' ) {
+        if (this.$route.name === 'work-wd') {
           this.footerShow = false;
           this.wdNoiseBg = true;
         } else {

@@ -9,10 +9,14 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { hid: 'description', name: 'description', content: 'Nuxt.js project' },
+      { property: 'og:title', content: 'do do do' },
+      { property: 'og:description', content: 'do it do it true' },
+      { property: 'og:image', content: 'https://do5do.github.io/og-image.jpg' },
+      { property: 'og:url', content: 'https://do5do.github.io/' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ]
   },
   /*

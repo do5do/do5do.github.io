@@ -3,18 +3,17 @@
 		<section class="page-header__box start-pd-top">
 			<div class="page-header position-relative">
 				<p class="page-title font-helve">work</p>
-				<div class="work-category">
+				<div class="work-category mobile-z-index">
 					<!-- pc category -->
 					<ul class="mobile-hidden">
-						<li
-							v-for="(val, key) in option.getFilterData"
-							:class="[key === filterOption ? 'active' : '']"
-							@click="filter(key)"
-						>
-							<p class="page-sub-title">
-								{{key}}
-							</p>
-						</li>
+						<template v-for="(val, key) in option.getFilterData">
+							<template v-if="key === 'UX / UI'"></template>
+							<template v-else>
+								<li :class="[key === filterOption ? 'active' : '']" @click="filter(key)">
+									<p class="page-sub-title">{{key}}</p>
+								</li>
+							</template>
+						</template>
 					</ul>
 
 					<!-- mobile category -->
@@ -22,9 +21,7 @@
 						<label for="work-ctg">{{selectedValue}}</label>
 						<select id="work-ctg" name="work-ctg" v-model="selectedValue" @change="changeCtg()">
 							<template v-for="(val, key) in option.getFilterData">
-								<template v-if="key === 'User Experience / User Interface'">
-									<option :value="key">UX / UI</option>
-								</template>
+								<template v-if="key === 'User Experience / User Interface'"><!-- 값을 비워줌 --></template>
 								<template v-else>
 									<option :value="key">{{key}}</option>
 								</template>
@@ -47,7 +44,7 @@
 					@filter="filterOption = arguments[0]"
 				>
 					<div v-for="(list, index) in workList" :key="index">
-						<nuxt-link :to="{name: 'work-wd', params: {wd: list.id}}">
+						<nuxt-link :to="{name: 'work-wd', path: '/work/:wd', params: {wd: list.id}}">
 							<div class="list-content">
 								<div class="img-box">
 									<img :src="list.thumbnail">
@@ -97,7 +94,9 @@
 							return el.ctg.indexOf('Brand Experience') >= 0;
 						},
 						'User Experience / User Interface': (el) => {
-							this.selectedValue = 'UX / UI';
+							return el.ctg.indexOf('User Experience / User Interface') >= 0;
+						},
+						'UX / UI': (el) => {
 							return el.ctg.indexOf('User Experience / User Interface') >= 0;
 						},
 						'illustration': (el) => {
@@ -113,12 +112,12 @@
 			}
 		},
 		mounted () {
+
 		},
 		methods: {
 			filter (key) {
 				this.$refs.list.filter(key);
 			},
-
 			changeCtg () {
 				this.filter(this.selectedValue);
 			},

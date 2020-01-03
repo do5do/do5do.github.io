@@ -87,7 +87,7 @@
 						<p class="description">
 							<span class="bold">부경대학교</span><br>
 							시각디자인학과 전공<br>
-							@ 2014. 03 ~ 2018. 02
+							@2014.03 ~ 2018.02
 						</p>
 					</div>
 					<div class="paragraph">
@@ -95,7 +95,7 @@
 						<p class="description">
 							<span class="bold">Aart</span>, a family group of Yoondesign<br>
 							graphic / UXUI designer<br>
-							@ 2018. 05 ~ 2019. 06
+							@2018.05 ~ 2019.06
 						</p>
 					</div>
 				</div>

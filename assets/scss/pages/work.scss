@@ -1,12 +1,11 @@
 .work-category {
 	position: absolute;
-	z-index: 1020;
+	z-index: 1020; // pc에서 header보다 높게
 	top: 2.3vw;
 	left: 33.2vw;
 
 	li {
 		cursor: pointer;
-
 		// active 됐을때 after rotate 조정
 		&:first-child {
 			.page-sub-title:after {
@@ -59,7 +58,7 @@
 			display: block;
 			content: '';
 			position: absolute;
-			top: 32%;
+			top: 30%;
 			right: 0;
 			transform-origin: right;
 			background-color: $point-blue;
@@ -75,8 +74,11 @@
 	}
 
 	// mobile category
-
 	@media (max-width: $grid-bp-mobile) {
+		// mobile에서 category z-index 헤더보다 낮게 조절
+		&.mobile-z-index {
+			z-index: 10;
+		}
 		top: 5.2vw;
 		left: 40vw;
 		@media (min-width: $grid-bp-tablet-start) {
@@ -119,7 +121,6 @@
 }
 
 // work list section
-
 .work-list {
 	position: relative;
 	z-index: 1;

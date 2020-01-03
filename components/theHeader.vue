@@ -148,7 +148,6 @@
 				if (this.showNav === false) {
 					this.showNav = true;
 					document.body.style.overflow = 'hidden';
-
 				} else {
 					this.showNav = false;
 					document.body.style.overflow = 'auto';
@@ -202,15 +201,15 @@
 				}
 			},
 			mainScrollChangeMobile () {
-				if (window.scrollY <= 130) {
+				if (window.scrollY <= 100) {
 					this.mainText = true;
 					this.logoType = true;
 
-				} else if (window.scrollY > 130 && window.scrollY <= 560) {
+				} else if (window.scrollY > 100 && window.scrollY <= 400) {
 					this.mainText = true;
 					this.logoType = false;
 
-				} else if (window.scrollY > 560) {
+				} else if (window.scrollY > 400) {
 					this.mainText = false;
 					this.logoType = false;
 					this.emojiText = 'touch the text';
