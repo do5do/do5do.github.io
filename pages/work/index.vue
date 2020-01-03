@@ -44,7 +44,7 @@
 					@filter="filterOption = arguments[0]"
 				>
 					<div v-for="(list, index) in workList" :key="index">
-						<nuxt-link :to="{name: 'work-wd', path: '/work/:wd', params: {wd: list.id}}">
+						<nuxt-link :to="{name: 'work-wd', params: {wd: list.id}}">
 							<div class="list-content">
 								<div class="img-box">
 									<img :src="list.thumbnail">

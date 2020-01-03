@@ -95,9 +95,9 @@
 			};
 
 			// The server-side needs a full url to work
-			if (process.server) {
-				options.baseURL = `http://${process.env.API_SERVER_ADDRESS}/work/${this.workNumber}`
-			}
+			// if (process.server) {
+			// 	options.baseURL = `http://${process.env.API_SERVER_ADDRESS}/work/${this.workNumber}`
+			// }
 		},
 		components: {
 			ticketX
