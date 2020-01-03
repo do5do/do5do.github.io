@@ -140,7 +140,7 @@
 		width: 37vw;
 
 		@media (max-width: $grid-bp-mobile) {
-			position: static;
+			position: relative;
 			width: 100%;
 			margin: 14vw 0;
 

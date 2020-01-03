@@ -85,6 +85,8 @@
 	}
 
 	.body-items {
+		position: relative;
+		z-index: -1;
 		flex: none;  // 0 0 auto 와 동일
 		margin-left: 14vw;
 
