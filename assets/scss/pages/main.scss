@@ -112,6 +112,10 @@
 	display: inline-block;
 	overflow: hidden;
 	margin-bottom: 1vw;
+
+	@media (max-width: $grid-bp-mobile) {
+		overflow: initial; // mobile에서 글자 가려지는거 없앰
+	}
 }
 
 .main-title {
@@ -230,6 +234,8 @@
 	}
 
 	@media (max-width: $grid-bp-mobile) {
+		overflow: initial; // mobile에서 글자 가려지는거 없앰
+
 		&.margin-mobile {
 			margin-top: 3.5vw;
 

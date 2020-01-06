@@ -205,11 +205,11 @@
 					this.mainText = true;
 					this.logoType = true;
 
-				} else if (window.scrollY > 100 && window.scrollY <= 400) {
+				} else if (window.scrollY > 100 && window.scrollY <= 360) {
 					this.mainText = true;
 					this.logoType = false;
 
-				} else if (window.scrollY > 400) {
+				} else if (window.scrollY > 360) {
 					this.mainText = false;
 					this.logoType = false;
 					this.emojiText = 'touch the text';
