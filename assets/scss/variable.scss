@@ -12,13 +12,15 @@ $heavy: 900;
 
 /*
 media query break point
-pc : 1001px~ (tablet 가로모드 부터)
-ipad pro 세로모드(1024px) : tablet size mobile view
-mobile view : ~1000px (tablet 세로모드까지)
-tablet 비율 조정 : 580px ~ 999px
-only mobile : ~579px
+
+* pc : 1001px~ (tablet 가로모드 부터)
+* ipad pro 세로모드(1024px) : tablet size mobile view
+* mobile view : ~1000px (tablet 세로모드까지)
+* tablet 비율 조정 : 580px ~ 999px
+* only mobile : ~579px
+
  */
 
 $grid-bp-pro-port: 1024px; // ipad pro 세로모드 => work detail 페이지에 패딩 제외, pc와 동일
 $grid-bp-mobile: 1000px; // mobile view max point
-$grid-bp-tablet-start: 580px; // mobile view => tablet size
+$grid-bp-tablet-start: 580px; // mobile view => tablet size로 비율 조절

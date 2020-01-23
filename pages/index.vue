@@ -25,19 +25,19 @@
               <span>two hundred </span>
               <span>percent</span>
             </p>
-            <span class="active-text">What’s mean?</span>
+            <span class="active-text">About me</span>
           </nuxt-link>
         </div>
         <div class="main-title__box margin" @mouseover="showUnderLine(2)" :class="{'active': underLine2}">
           <nuxt-link to="/toy-proj" class="second">
             <p class="main-title font-helve under-line">do it</p>
-            <span class="active-text">I can do this, too.</span>
+            <span class="active-text">Not work</span>
           </nuxt-link>
         </div>
         <div class="main-title__box margin margin-mobile" @mouseover="showUnderLine(3)" :class="{'active': underLine3}">
           <nuxt-link to="/work" class="third">
             <p class="main-title font-helve under-line">do it true</p>
-            <span class="active-text">What can I do?</span>
+            <span class="active-text">What I do</span>
           </nuxt-link>
         </div>
       </div>
@@ -73,13 +73,13 @@
         if (window.scrollY > 300) {
           this.textUp = true;
         }
-      }
+      },
     },
     created () {
       if (process.client) {
         window.addEventListener('scroll', () => {
           this.mainTextUp();
-        })
+        });
       }
     },
     mounted () {

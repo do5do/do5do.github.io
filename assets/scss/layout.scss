@@ -159,8 +159,8 @@ svg {
 	font-weight: $regular;
 
 	@media (max-width: $grid-bp-mobile) {
-		font-size: 3.8vw;
-		line-height: 6.2vw;
+		font-size: 3.76vw;
+		line-height: 6vw;
 
 		@media (min-width: $grid-bp-tablet-start) {
 			font-size: 2.4vw;
@@ -185,9 +185,10 @@ svg {
 }
 
 .text-line {
-	position: relative; // 링크를 noise bg 보다 위로 올려줌
-	z-index: 2;
+	position: relative;
+	z-index: 1;
 	text-decoration: underline;
+	cursor: pointer;
 }
 
 // page title

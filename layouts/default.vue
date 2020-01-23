@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <div class="noise-bg" :class="{'wd-noise-bg': wdNoiseBg}"></div>
+    <div class="noise-bg"></div>
     <theHeader></theHeader>
     <nuxt/>
     <theFooter v-if="footerShow"></theFooter>
@@ -19,7 +19,6 @@
     data () {
       return {
         footerShow: true,
-        wdNoiseBg: false,
       }
     },
     created () {
@@ -62,7 +61,7 @@
       }
     },
     mounted () {
-      // noise-bh vh control 초기 실행
+      // vh control 초기 실행
       this.handle100vh();
       // footer, bg 감지 control 초기 실행
       this.detectWorkWid();
@@ -83,19 +82,14 @@
       handleWorkWidPC () {
         if (this.$route.name === 'work-wd') {
           this.footerShow = false;
-          this.wdNoiseBg = true;
         } else {
           this.footerShow = true;
-          this.wdNoiseBg = false;
         }
       },
       // footer show/hide
       handleWorkWidMobile () {
         if (this.$route.name === 'work-wd') {
           this.footerShow = true;
-          this.wdNoiseBg = true;
-        } else {
-          this.wdNoiseBg = false;
         }
       },
       // media 감지
@@ -123,25 +117,13 @@
   }
 
   .noise-bg {
+    display: none;
     position: absolute;
     background:url(/images/body-noise.png) repeat center;
     background-size: 180px;
     width: 100%;
     height: 100%;
-    @media (max-width: $grid-bp-mobile) {
-      opacity: 0.6;
-    }
-
-    &.wd-noise-bg {
-      background: none;
-      @media (max-width: $grid-bp-mobile) {
-        position: absolute;
-        background:url(/images/body-noise.png) repeat center;
-        background-size: 180px;
-        width: 100%;
-        height: 100%;
-      }
-    }
+    opacity: 0.6;
   }
 </style>
 

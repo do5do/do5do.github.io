@@ -12,25 +12,9 @@
 	.swiper-slide {
 		width: auto;
 
-		&:before {
-			display: block;
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			background:url(/images/body-noise.png) repeat center;
-			background-size: 180px;
-			width: 100%;
-			height: 100%;
-		}
-
 		@media (max-width: $grid-bp-mobile) {
 			width: 100% !important;
 			height: auto !important;
-
-			&:before {
-				display: none;
-			}
 		}
 	}
 
@@ -72,8 +56,6 @@
 	}
 
 	.items {
-		position: relative;
-		z-index: -1;
 		flex: none;  // 0 0 auto 와 동일
 	}
 
@@ -117,9 +99,12 @@
 				}
 			}
 		}
-
+		// visit live
 		.description {
-
+			a {
+				color: $gray-des;
+				padding-top: 2vh;
+			}
 		}
 
 		.wd-paragraph__box {
@@ -187,7 +172,7 @@
 		height: 100%;
 		width: 6vw;
 		white-space: nowrap;
-		margin-left: 8vw;
+		margin-left: 12vw;
 
 		&.items {
 			position: relative;
@@ -198,7 +183,7 @@
 			flex-direction: row-reverse;
 			justify-content: space-between;
 			width: 100%;
-			padding: 20vw 0 8vw 0;
+			padding: 34vw 0 8vw 0;
 			margin-left: initial;
 
 			@media (min-width: $grid-bp-tablet-start) {

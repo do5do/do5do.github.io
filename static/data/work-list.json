@@ -2,44 +2,44 @@
   "data": [
     {
       "id": 1,
-      "ctg": ["All", "Brand Experience", "User Experience / User Interface"],
-      "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
-      "tag": "BX/UXUI",
-      "title": "Ticket X"
-    },
-    {
-      "id": 3,
       "ctg": ["All", "Brand Experience", "illustration"],
-      "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
+      "thumbnail": "/work-detail/toast/thumbnail.jpg",
       "tag": "bx/illustration",
       "title": "toast"
     },
     {
-      "id": 4,
-      "ctg": ["All", "Graphic"],
+      "id": 2,
+      "ctg": ["All", "Brand Experience", "User Experience / User Interface"],
       "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
-      "tag": "GRAPHIC",
+      "tag": "bx/uxui",
+      "title": "ticket X"
+    },
+    {
+      "id": 3,
+      "ctg": ["All", "User Experience / User Interface", "illustration"],
+      "thumbnail": "",
+      "tag": "bx/uxui/illustration",
       "title": "transition"
     },
     {
-      "id": 2,
+      "id": 4,
       "ctg": ["All", "User Experience / User Interface"],
-      "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
-      "tag": "BX/UXUI",
+      "thumbnail": "",
+      "tag": "bx/uxui",
       "title": "transform"
     },
     {
       "id": 5,
       "ctg": ["All", "illustration"],
-      "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
+      "thumbnail": "",
       "tag": "bx/illustration",
       "title": "lilaland"
     },
     {
       "id": 6,
       "ctg": ["All", "Graphic", "illustration"],
-      "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
-      "tag": "GRAPHIC",
+      "thumbnail": "",
+      "tag": "graphic",
       "title": "true"
     }
   ]

@@ -6,11 +6,20 @@
 					<!-- main description area -->
 					<div class="main-description__box items">
 						<div class="wd-paragraph pd-bottom">
-							<p class="title font-helve">{{workDetail.static.title}}</p>
+							<nuxt-link to="/work">
+								<p class="title font-helve">{{workDetail.static.title}}</p>
+							</nuxt-link>
 							<p class="description">
 								{{workDetail.static.ctg}}<br>
+								<!-- client 정보 -->
 								<template v-if="clientYN">
 									<span class="bold">Client</span><span>{{workDetail.static.client}}</span>
+								</template>
+								<!-- 사이트 연결 -->
+								<template v-if="workDetail.static.visit">
+									<a :href="workDetail.static.link" :target="blank" @click="handleSite()">
+										<span class="text-line">Visit live</span>
+									</a>
 								</template>
 							</p>
 						</div>
@@ -22,14 +31,13 @@
 								</p>
 							</div>
 							<div class="wd-paragraph bottom">
-								<p class="sub-title">Situation</p>
+								<p class="sub-title">{{workDetail.static.subtitle}}</p>
 								<p class="description"
-								   v-html="workDetail.static.situation"
+								   v-html="workDetail.static.paragraph"
 								></p>
 							</div>
 						</div>
 					</div>
-
 					<!-- main image area -->
 					<div class="main-image items row-full">
 						<img :src="workDetail.static.mainImg" alt="포트폴리오 이미지">
@@ -37,10 +45,30 @@
 
 					<!-- detail contents component : s -->
 					<template v-if="workDetail.id === 1">
+						<toast
+							:paraTopTitle="workDetail.component.paragraphTop.title"
+							:paraTopDesc="workDetail.component.paragraphTop.description"
+							:imgFull01="workDetail.component.imgFull01"
+							:title="workDetail.component.visualMotif.title"
+							:description="workDetail.component.visualMotif.description"
+							:image="workDetail.component.visualMotif.image"
+							:imgFull02="workDetail.component.imgFull02"
+							:textTop="workDetail.component.textTop.text"
+							:textTopDesc="workDetail.component.textTop.description"
+							:imgFull03="workDetail.component.imgFull03"
+							:textBottom="workDetail.component.textBottom.text"
+							:textBottomDesc="workDetail.component.textBottom.description"
+							:imgFull04="workDetail.component.imgFull04"
+							:textBottom2="workDetail.component.textBottom2.text"
+							:textBottomDesc2="workDetail.component.textBottom2.description"
+						/>
+					</template>
+
+					<template v-if="workDetail.id === 2">
 						<ticketX
-							:title="workDetail.component.designKeyword.title"
-							:description="workDetail.component.designKeyword.description"
-							:image="workDetail.component.designKeyword.image"
+							:title="workDetail.component.visualMotif.title"
+							:description="workDetail.component.visualMotif.description"
+							:image="workDetail.component.visualMotif.image"
 							:contentsImgTop="workDetail.component.contentsImage.imgTop"
 							:contentsSubtitle="workDetail.component.contentsImage.subTitle"
 							:contentsSubDesc="workDetail.component.contentsImage.subDesc"
@@ -78,10 +106,15 @@
 </template>
 
 <script>
-	import ticketX from '~/components/ticketX.vue'
-	import axios from "axios";
+	import ticketX from '~/components/work-detail/ticketX.vue'
+	import toast from '~/components/work-detail/toast.vue'
+	import axios from "axios"
 
 	export default {
+		components: {
+			ticketX,
+			toast
+		},
 		// json 비동기로 불러오기
 		async asyncData({params}) {
 			let {data: workDetailData} = await axios.get(process.env.API_SERVER_ADDRESS + '/data/work-detail.json');
@@ -98,28 +131,6 @@
 			// if (process.server) {
 			// 	options.baseURL = `http://${process.env.API_SERVER_ADDRESS}/work/${this.workNumber}`
 			// }
-		},
-		components: {
-			ticketX
-		},
-		created () {
-			// 리스트의 id를 가져와서 상세정보의 id를 비교하여 데이터 출력.
-			let params = this.workNumber;
-			let data = {};
-			// 메모리 줄이기 위해 변수에 담음
-			let detail = this.workDetail.forEach((item) => {
-				if (item.id === params) {
-					data = item;
-				}
-			});
-			this.workDetail = data;
-
-			// client 정보 true, false
-			if (this.workDetail.static.client === '' || this.workDetail.static.client === null) {
-				this.clientYN = false;
-			} else {
-				this.clientYN = true;
-			}
 		},
 		data () {
 			return {
@@ -141,9 +152,45 @@
 						}
 					}
 				},
-				// client 정보
-				clientYN : false,
+				clientYN: false,
+				blank: '',
 			}
+		},
+		created () {
+			// 리스트의 id를 가져와서 상세정보의 id를 비교하여 데이터 출력.
+			let params = this.workNumber;
+			let data = {};
+			// 메모리 줄이기 위해 변수에 담음
+			let detail = this.workDetail.forEach((item) => {
+				if (item.id === params) {
+					data = item;
+				}
+			});
+			this.workDetail = data;
+
+			// client 정보 true, false
+			if (this.workDetail.static.client === '' || this.workDetail.static.client === null) {
+				this.clientYN = false;
+			} else {
+				this.clientYN = true;
+			}
+
+			// visit link control
+			if (this.workDetail.static.link === '') {
+				// 링크가 생성되지 않도록 함
+				this.workDetail.static.link = 'javascript:void(0)';
+				this.blank = '';
+			} else {
+				// 링크 있을때 새창으로 열기
+				this.blank = '_blank';
+			}
+		},
+		methods: {
+			handleSite () {
+				if (this.workDetail.static.link === '' || this.workDetail.static.link === 'javascript:void(0)') {
+					alert('준비중 입니다.');
+				}
+			},
 		}
 	}
 </script>

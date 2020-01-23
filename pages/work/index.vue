@@ -46,9 +46,7 @@
 					<div v-for="(list, index) in workList" :key="index">
 						<nuxt-link :to="{name: 'work-wd', params: {wd: list.id}}">
 							<div class="list-content">
-								<div class="img-box">
-									<img :src="list.thumbnail">
-								</div>
+								<figure class="img-box" :style="{backgroundImage: `url(${list.thumbnail})`}"></figure>
 								<p class="list-tag">{{list.tag}}</p>
 								<p class="list-title">{{list.title}}</p>
 							</div>
@@ -110,9 +108,6 @@
 
 				selectedValue: 'All',
 			}
-		},
-		mounted () {
-
 		},
 		methods: {
 			filter (key) {

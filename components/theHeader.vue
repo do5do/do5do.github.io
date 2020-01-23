@@ -89,7 +89,7 @@
 				logoType: true,
 				emojiText: 'move mouse over the text',
 
-				// nav 관련
+				// mobile nav
 				showNav: false,
 
 				// nav li for in으로 제어
@@ -112,9 +112,6 @@
 		created () {
 			// process.client는 가상 돔이 그려진 후 실행시킴
 			if (process.client) {
-				// header 감지
-				this.detectHeader();
-
 				// scroll 감지
 				window.addEventListener('scroll', () => {
 					if (matchMedia("(max-width:1000px)").matches) {

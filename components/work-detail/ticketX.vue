@@ -1,12 +1,10 @@
 <template>
 	<div class="wd-body">
 		<!-- contents text : img-bottom, text-top -->
-		<div class="wd-contents contents-image body-items">
+		<div class="wd-contents contents-text body-items">
 			<div class="wd-paragraph">
 				<p class="sub-title">{{title}}</p>
-				<p class="description"
-				   v-html="description"
-				></p>
+				<p class="description" v-html="description"></p>
 			</div>
 			<figure class="wd-image">
 				<img :src="image" alt="포트폴리오 이미지">
@@ -36,8 +34,9 @@
 		<figure class="wd-image body-items">
 			<img :src="imgFull02" alt="포트폴리오 이미지">
 		</figure>
+
 		<!-- text layout : top -->
-		<div class="wd-paragraph body-items wd-paragraph-narrow items__margin-narrow">
+		<div class="wd-paragraph body-items wd-paragraph-narrow margin-narrow">
 			<p class="sub-title">{{textTop}}</p>
 			<p class="description">
 				{{textTopDesc}}
@@ -48,8 +47,9 @@
 		<figure class="wd-image body-items">
 			<img :src="imgFull03" alt="포트폴리오 이미지">
 		</figure>
+
 		<!-- text layout : bottom -->
-		<div class="wd-paragraph paragraph-bottom body-items wd-paragraph-narrow items__margin-narrow">
+		<div class="wd-paragraph paragraph-bottom body-items wd-paragraph-narrow margin-narrow">
 			<p class="sub-title">{{textBottom}}</p>
 			<p class="description">
 				{{textBottomDesc}}
@@ -65,15 +65,14 @@
 
 <script>
 	export default {
-		name: "wd-ticketX",
 		props: {
 			title: {
 				type: String,
-				default: 'Design Keyword'
+				default: 'Visual Motif'
 			},
 			description: {
 				type: String,
-				default: 'design keyword description'
+				default: 'Visual Motif description'
 			},
 			image: {
 				type: String,

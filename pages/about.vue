@@ -64,7 +64,7 @@
 						<p class="title font-helve">do it do it true</p>
 						<p class="sub-title">실현하는 사람, 김도희입니다.</p>
 						<p class="description">
-							<span class="bold">dohee Kim</span> / 1995. 05. 19<br>
+							<span class="bold">dohee Kim</span> / 1995.05.19<br>
 							+82)10 - 2455 - 7030<br>
 							<span class="text-line">
 								<a href="mailto:#">do151015@gmail.com</a>

@@ -1,8 +1,8 @@
 <template>
 	<div>
-		<section class="work-detail">
+		<section class="wd-body">
 			<!-- text layout : top -->
-			<div class="wd-paragraph items wd-paragraph-narrow">
+			<div class="wd-paragraph body-items">
 				<p class="sub-title">Design Keyword</p>
 				<p class="description">
 					티켓: 티켓의 가장 단순한 형태인 직사각형에서부터 출발하여, '흩어져있던 티켓을 모아 서로에게 연결해준다는 의미'를 담아 도식화된 티켓들이 모여 텍스트를 이루고 형태를 띠게 됩니다.<br><br>
@@ -10,7 +10,7 @@
 				</p>
 			</div>
 			<!-- text layout : middle -->
-			<div class="wd-paragraph items paragraph-middle wd-paragraph-narrow">
+			<div class="wd-paragraph body-items paragraph-middle">
 				<p class="sub-title">Design Keyword</p>
 				<p class="description">
 					티켓: 티켓의 가장 단순한 형태인 직사각형에서부터 출발하여, '흩어져있던 티켓을 모아 서로에게 연결해준다는 의미'를 담아 도식화된 티켓들이 모여 텍스트를 이루고 형태를 띠게 됩니다.<br><br>
@@ -18,7 +18,7 @@
 				</p>
 			</div>
 			<!-- text layout : bottom -->
-			<div class="wd-paragraph items paragraph-bottom wd-paragraph-narrow">
+			<div class="wd-paragraph body-items paragraph-bottom">
 				<p class="sub-title">Design Keyword</p>
 				<p class="description">
 					티켓: 티켓의 가장 단순한 형태인 직사각형에서부터 출발하여, '흩어져있던 티켓을 모아 서로에게 연결해준다는 의미'를 담아 도식화된 티켓들이 모여 텍스트를 이루고 형태를 띠게 됩니다.<br><br>
@@ -27,13 +27,13 @@
 			</div>
 
 			<!-- image layout : height full -->
-			<figure class="wd-image items">
+			<figure class="wd-image body-items">
 				<img src="/work-detail/ticketX/application-1.jpg" alt="어플리케이션">
 			</figure>
 
 
 			<!-- contents image : img-top, text-bottom -->
-			<div class="wd-contents items">
+			<div class="wd-contents body-items">
 				<figure class="wd-image" :style="`width: ${imgWidthTop}`">
 					<img src="/work-detail/ticketX/application-1.jpg" alt="어플리케이션">
 				</figure>
@@ -47,7 +47,7 @@
 			</div>
 
 			<!-- contents text : img-bottom, text-top -->
-			<div class="wd-contents contents__img-bottom items">
+			<div class="wd-contents  contents-text body-items">
 				<div class="wd-paragraph" :style="`width: ${textWidth}`">
 					<p class="sub-title">Design Keyword</p>
 					<p class="description">

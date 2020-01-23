@@ -12,7 +12,7 @@
 		width: 35.8vw;
 
 		.left-eyeball, .right-eyeball {
-			animation: eyeballMoving 2.6s ease infinite;
+			animation: eyeballMoving 2.2s ease-in infinite;
 		}
 
 		@keyframes eyeballMoving {
@@ -78,6 +78,7 @@
 .main-visual__text-area {
 	padding-top: 10vw;
 
+	// textUp active
 	&.active {
 		.main-title:first-child {
 			transform: translateY(0);
@@ -144,7 +145,7 @@
 		margin-bottom: 0.6vw;
 		background-image: linear-gradient(#000, #000);
 		background-repeat: no-repeat;
-		background-size: 0 0.3vw;  // mobile : under line 고정
+		background-size: 0 0.3vw;
 		background-position: 0 bottom;
 		transition: all .35s ease-in;
 
@@ -180,6 +181,7 @@
 	cursor: pointer;
 	overflow: hidden;
 
+	// 선 그어지고 설명 글자 나오는 active
 	&.active {
 		.under-line {
 			background-size: 100% 0.3vw;
@@ -211,12 +213,12 @@
 	}
 
 	.active-text {
-		display: inline-block;
+		display: inline-block; // span 태그의 width 조절을 위해 inline-block으로 바꿔줌
 		visibility: visible;
 		position: relative;
 		z-index: -1;
 		font-size: 1vw;
-		white-space: nowrap;
+		white-space: nowrap; // 줄 떨어짐 방지
 		overflow: hidden;
 		width: 0;
 		transition: all .4s ease-in;
