@@ -3,36 +3,41 @@
     {
       "id": 1,
       "static": {
-        "title": "Ticket X",
-        "ctg": "Brand Experience, User Experience, User Interface",
-        "client": " / VOLUME UNIT",
-        "overview": "티켓 엑스는 중고 티켓 거래 플랫폼입니다. 손쉽게 티켓을 사고, 안전하게 팔고, 선물할 수 있으며 페스티벌이나 공연 당일에는 큐얼 코드 하나로 기다림 없이 입장할 수 있습니다.",
-        "situation": "가고 싶었던 공연이 있어 예매를 했지만 부득이한 사정이 생겨 공연에 가지 못할 때가 있습니다. 이럴 때면 예매했던 티켓을 중고 사이트에 올려놓고, 구매자의 연락을 손꼽아 기다립니다. 구매자의 연락이 오면 직접 만나거나 택배로 티켓을 거래합니다. 이렇게 판매자와 구매자 모두 티켓을 사고팔기까지에 많은 단계를 거치게 됩니다. 또한 거래 도중 티켓이 보장되지 않았거나 원하는 금액을 얻지 못하는 경우가 발생할 수 있습니다.<br><br>실물 티켓 거래라는 단점을 보완하고 개인이 직접 거래하는 중고 티켓을 확실하게 보장하며 안전하게 거래할 수 있도록 합니다. 또한 공연 현장에서 본인 확인 절차를 위해 실물 티켓으로 다시 교환 후 입장하는 시스템의 불편함을 큐얼 코드 한 번으로 줄이고자 하였습니다.",
-        "mainImg": "/work-detail/ticketX/splash-screen.jpeg"
+        "title": "toast",
+        "ctg": "Brand Experience, illustration",
+        "client": "",
+        "visit": false,
+        "overview": "토스트(toast)는 서양의 문화 중 하나인 건배라는 뜻을 가진 관용어 「I’d like to make a toast」 에서 파생되어 만들어진 캐릭터 디자인 회사입니다. 즐거운 축제 분위기 속의 건배만큼 일상생활에 지친 사람들이 지금 이 순간만큼은 재미있게 즐기는 것을 브랜드 목표로 하여 2030세대를 타겟으로 컨셉있는 스타일을 추구합니다.",
+        "subtitle": "Situation",
+        "paragraph": "캐릭터 사업의 범위는 키덜트 문화와 함께 매우 빠르게 확대되었고 지속적으로 성장하고 있는 추세입니다. 개인의 취향에 맞는 이모티콘으로 자신의 감정을 대신 표현하며, 그러한 취향과 가치를 반영하는 제품에 아낌없이 투자하는 소비 형태가 계속되고 있습니다.<br><br>토스트는 빠르게 소비되는 시대에 맞춰 각자의 취향을 담은 다양한 프로젝트들을 진행합니다. 다양한 컬러를 담을 수 있도록 무채색을 바탕으로 하여, 모든 프로젝트마다 밝고 명랑한 느낌의 화려한 색감을 포인트 컬러로 획일하게 가져갑니다.",
+        "mainImg": "/work-detail/toast/main.jpg"
       },
       "component": {
-        "designKeyword": {
-          "title": "Design Keyword",
-          "description": "티켓: 티켓의 가장 단순한 형태인 직사각형에서부터 출발하여, '흩어져있던 티켓을 모아 서로에게 연결해준다는 의미'를 담아 도식화된 티켓들이 모여 텍스트를 이루고 형태를 띠게 됩니다.<br><br>각진: 티켓에서 뻗어 나온 형태로 곡선 없이 각져 있어 강하고 잘 다듬어진 느낌을 전달해 줍니다. 이는 페스티벌의 묵직함과 열정을 담고 있으며, 어두운 무채색 컬러에 화려한 조명을 상징하는 옐로를 포인트로 디자인하였습니다.",
-          "image": "/work-detail/ticketX/icons.jpg"
+        "paragraphTop": {
+          "title": "Liquid monster",
+          "description": "토스트의 첫 번째 프로젝트인 ‘리퀴드 몬스터’는 주인공 액체 괴물이 김소녀와 함께 새롭게 만난 세상 속에서 자신만의 정체성을 찾아 떠나는 여행기입니다. 액체 괴물의 특징인 틀이 없는 모양을 형상화하여 각각의 색을 담아 자신만의 개성을 표현했습니다."
         },
-        "contentsImage": {
-          "imgTop": "/work-detail/ticketX/application-1.jpg",
-          "subTitle": "Symbol",
-          "subDesc": "티켓을 형상화한 텍스트 모티프를 바탕으로 T와 X의 조합으로 이루어졌습니다."
+        "imgFull01": "/work-detail/toast/liquid-monster-poster.jpg",
+        "visualMotif": {
+          "title": "Visual Motif",
+          "description": "리퀴드 몬스터의 가장 큰 시각적 아이덴티티인 유동적인 형태는 틀이 없어 모양이 정해져 있지 않으며, 반대로 모든 틀에 알맞게 적응하기도 합니다. 이는 아직 때묻지 않고 경계가 없으며 어디든 적응할 수 있지만 누구와도 같지 않은 다양성을 뜻합니다.<br><br>토스트와 결을 같게 하여 밝고 화려한 컬러를 주로 사용하여 명랑하고 희망적인 느낌을 전달합니다.",
+          "image": "/work-detail/toast/visual-motif.jpg"
         },
-        "imgFull01": "/work-detail/ticketX/application-2.jpg",
-        "imgFull02": "/work-detail/ticketX/application-2.jpg",
+        "imgFull02": "/work-detail/toast/character-illustration.jpg",
         "textTop":{
-          "text": "티켓 구매 페이지",
-          "description": "해당 페스티벌을 눌렀을 때 나오는 페이지로 공연 일정이 요일별로 구분되어 있어 선택이 쉬우며, 남은 중고 티켓의 매수를 알려줍니다."
+          "text": "Character illustration",
+          "description": "리퀴드 몬스터의 캐릭터 일러스트로 액체 괴물과 김소녀의 이야기는 유동적인 형태에서 찾을 수 있는 상황을 통해 전개되며, 누구의 이야기도 아니기에 제3자의 관점으로 유머러스하게 전달하고 있습니다."
         },
-        "imgFull03": "/work-detail/ticketX/application-2.jpg",
+        "imgFull03": "/work-detail/toast/application.jpg",
         "textBottom": {
-          "text": "마이 티켓",
-          "description": "화면 하단의 마이티켓 탭으로 들어가면 내가 구매한 티켓이 나오고, 입장과 선물, 판매가 쉽습니다."
+          "text": "Application",
+          "description": "리퀴드 몬스터의 캐릭터 일러스트를 활용한 아트북, 공책, 스티커 등의 어플리케이션 디자인입니다."
         },
-        "imgFull04": "/work-detail/ticketX/application-2.jpg"
+        "imgFull04": "/work-detail/toast/application2.jpg",
+        "textBottom2": {
+          "text": "Application",
+          "description": "캐릭터를 활용한 패턴으로 제작 된 폰케이스와 티셔츠입니다."
+        }
       }
     },
     {
@@ -41,103 +46,36 @@
         "title": "Ticket X",
         "ctg": "Brand Experience, User Experience, User Interface",
         "client": " / VOLUME UNIT",
+        "visit": true,
+        "link": "",
         "overview": "티켓 엑스는 중고 티켓 거래 플랫폼입니다. 손쉽게 티켓을 사고, 안전하게 팔고, 선물할 수 있으며 페스티벌이나 공연 당일에는 큐얼 코드 하나로 기다림 없이 입장할 수 있습니다.",
-        "situation": "가고 싶었던 공연이 있어 예매를 했지만 부득이한 사정이 생겨 공연에 가지 못할 때가 있습니다. 이럴 때면 예매했던 티켓을 중고 사이트에 올려놓고, 구매자의 연락을 손꼽아 기다립니다. 구매자의 연락이 오면 직접 만나거나 택배로 티켓을 거래합니다. 이렇게 판매자와 구매자 모두 티켓을 사고팔기까지에 많은 단계를 거치게 됩니다. 또한 거래 도중 티켓이 보장되지 않았거나 원하는 금액을 얻지 못하는 경우가 발생할 수 있습니다.<br><br>실물 티켓 거래라는 단점을 보완하고 개인이 직접 거래하는 중고 티켓을 확실하게 보장하며 안전하게 거래할 수 있도록 합니다. 또한 공연 현장에서 본인 확인 절차를 위해 실물 티켓으로 다시 교환 후 입장하는 시스템의 불편함을 큐얼 코드 한 번으로 줄이고자 하였습니다.",
-        "mainImg": "/work-detail/ticketX/splash-screen.jpeg"
+        "subtitle": "Situation",
+        "paragraph": "가고 싶었던 공연이 있어 예매를 했지만 부득이한 사정이 생겨 공연에 가지 못할 때가 있습니다. 이럴 때면 지인에게 양도를 하거나 예매했던 티켓을  중고 거래하기도 합니다. 하지만 중고 티켓 거래는 중고 거래 경험이 없는 사용자에게는 그저 어렵기만 합니다. 또한 거래 도중 티켓이 보장되지 않았거나 원하는 금액을 얻지 못하는 경우가 발생하기도 합니다.<br><br>실물 티켓 거래라는 단점을 보완하고 개인이 직접 거래하는 중고 티켓을 확실하게 보장하며 안전하게 거래할 수 있도록 합니다. 또한 공연 현장에서 본인 확인 절차를 위해 실물 티켓으로 다시 교환 후 입장하는 시스템의 불편함을 큐얼 코드 한 번으로 줄이고자 하였습니다.",
+        "mainImg": "/work-detail/ticketX/main.jpg"
       },
       "component": {
-        "designKeyword": {
-          "title": "Design Keyword",
-          "description": "티켓: 티켓의 가장 단순한 형태인 직사각형에서부터 출발하여, '흩어져있던 티켓을 모아 서로에게 연결해준다는 의미'를 담아 도식화된 티켓들이 모여 텍스트를 이루고 형태를 띠게 됩니다.<br><br>각진: 티켓에서 뻗어 나온 형태로 곡선 없이 각져 있어 강하고 잘 다듬어진 느낌을 전달해 줍니다. 이는 페스티벌의 묵직함과 열정을 담고 있으며, 어두운 무채색 컬러에 화려한 조명을 상징하는 옐로를 포인트로 디자인하였습니다.",
+        "visualMotif": {
+          "title": "Visual Motif",
+          "description": "티켓의 가장 단순한 형태인 직사각형에서부터 출발하여, '흩어져있던 티켓을 모아 서로에게 연결해준다는 의미'를 담아 도식화된 티켓들이 모여 텍스트를 이루고 형태를 띠게 됩니다.<br><br>티켓에서 뻗어 나온 형태로 곡선 없이 각져 있어 강하고 잘 다듬어진 느낌을 전달해 줍니다. 이는 페스티벌의 묵직함과 열정을 담고 있으며, 어두운 무채색 컬러에 화려한 조명을 상징하는 옐로를 포인트로 디자인하였습니다.",
           "image": "/work-detail/ticketX/icons.jpg"
         },
         "contentsImage": {
-          "imgTop": "/work-detail/ticketX/application-1.jpg",
-          "subTitle": "Symbol",
-          "subDesc": "티켓을 형상화한 텍스트 모티프를 바탕으로 T와 X의 조합으로 이루어졌습니다."
+          "imgTop": "/work-detail/ticketX/application.jpg",
+          "subTitle": "Application",
+          "subDesc": "비주얼 모티프를 바탕으로 만들어진 로고 어플리케이션입니다."
         },
-        "imgFull01": "/work-detail/ticketX/application-2.jpg",
-        "imgFull02": "/work-detail/ticketX/application-2.jpg",
+        "imgFull01": "/work-detail/ticketX/application2.jpg",
+        "imgFull02": "/work-detail/ticketX/main-page.jpg",
         "textTop":{
-          "text": "티켓 구매 페이지",
+          "text": "Main pages",
           "description": "해당 페스티벌을 눌렀을 때 나오는 페이지로 공연 일정이 요일별로 구분되어 있어 선택이 쉬우며, 남은 중고 티켓의 매수를 알려줍니다."
         },
-        "imgFull03": "/work-detail/ticketX/application-2.jpg",
+        "imgFull03": "/work-detail/ticketX/my-ticket-page.jpg",
         "textBottom": {
-          "text": "마이 티켓",
-          "description": "화면 하단의 마이티켓 탭으로 들어가면 내가 구매한 티켓이 나오고, 입장과 선물, 판매가 쉽습니다."
+          "text": "My ticket",
+          "description": "하단 탭의 마이티켓 페이지로 들어가면 내가 구매한 티켓이 나오고, 입장과 선물, 판매가 쉽습니다."
         },
-        "imgFull04": "/work-detail/ticketX/application-2.jpg"
-      }
-    },
-    {
-      "id": 3,
-      "static": {
-        "title": "hihihihihi X",
-        "ctg": "Brand Experience, User Experience, User Interface",
-        "client": " / VOLUME UNIT",
-        "overview": "티켓 엑스는 중고 티켓 거래 플랫폼입니다. 손쉽게 티켓을 사고, 안전하게 팔고, 선물할 수 있으며 페스티벌이나 공연 당일에는 큐얼 코드 하나로 기다림 없이 입장할 수 있습니다.",
-        "situation": "가고 싶었던 공연이 있어 예매를 했지만 부득이한 사정이 생겨 공연에 가지 못할 때가 있습니다. 이럴 때면 예매했던 티켓을 중고 사이트에 올려놓고, 구매자의 연락을 손꼽아 기다립니다. 구매자의 연락이 오면 직접 만나거나 택배로 티켓을 거래합니다. 이렇게 판매자와 구매자 모두 티켓을 사고팔기까지에 많은 단계를 거치게 됩니다. 또한 거래 도중 티켓이 보장되지 않았거나 원하는 금액을 얻지 못하는 경우가 발생할 수 있습니다.<br><br>실물 티켓 거래라는 단점을 보완하고 개인이 직접 거래하는 중고 티켓을 확실하게 보장하며 안전하게 거래할 수 있도록 합니다. 또한 공연 현장에서 본인 확인 절차를 위해 실물 티켓으로 다시 교환 후 입장하는 시스템의 불편함을 큐얼 코드 한 번으로 줄이고자 하였습니다.",
-        "mainImg": "/work-detail/ticketX/splash-screen.jpeg"
-      },
-      "component": {
-        "designKeyword": {
-          "title": "Design Keyword",
-          "description": "티켓: 티켓의 가장 단순한 형태인 직사각형에서부터 출발하여, '흩어져있던 티켓을 모아 서로에게 연결해준다는 의미'를 담아 도식화된 티켓들이 모여 텍스트를 이루고 형태를 띠게 됩니다.<br><br>각진: 티켓에서 뻗어 나온 형태로 곡선 없이 각져 있어 강하고 잘 다듬어진 느낌을 전달해 줍니다. 이는 페스티벌의 묵직함과 열정을 담고 있으며, 어두운 무채색 컬러에 화려한 조명을 상징하는 옐로를 포인트로 디자인하였습니다.",
-          "image": "/work-detail/ticketX/icons.jpg"
-        },
-        "contentsImage": {
-          "imgTop": "/work-detail/ticketX/application-1.jpg",
-          "subTitle": "Symbol",
-          "subDesc": "티켓을 형상화한 텍스트 모티프를 바탕으로 T와 X의 조합으로 이루어졌습니다."
-        },
-        "imgFull01": "/work-detail/ticketX/application-2.jpg",
-        "imgFull02": "/work-detail/ticketX/application-2.jpg",
-        "textTop":{
-          "text": "티켓 구매 페이지",
-          "description": "해당 페스티벌을 눌렀을 때 나오는 페이지로 공연 일정이 요일별로 구분되어 있어 선택이 쉬우며, 남은 중고 티켓의 매수를 알려줍니다."
-        },
-        "imgFull03": "/work-detail/ticketX/application-2.jpg",
-        "textBottom": {
-          "text": "마이 티켓",
-          "description": "화면 하단의 마이티켓 탭으로 들어가면 내가 구매한 티켓이 나오고, 입장과 선물, 판매가 쉽습니다."
-        },
-        "imgFull04": "/work-detail/ticketX/application-2.jpg"
-      }
-    },
-    {
-      "id": 4,
-      "static": {
-        "title": "Ticket X",
-        "ctg": "Brand Experience, User Experience, User Interface",
-        "client": " / VOLUME UNIT",
-        "overview": "티켓 엑스는 중고 티켓 거래 플랫폼입니다. 손쉽게 티켓을 사고, 안전하게 팔고, 선물할 수 있으며 페스티벌이나 공연 당일에는 큐얼 코드 하나로 기다림 없이 입장할 수 있습니다.",
-        "situation": "가고 싶었던 공연이 있어 예매를 했지만 부득이한 사정이 생겨 공연에 가지 못할 때가 있습니다. 이럴 때면 예매했던 티켓을 중고 사이트에 올려놓고, 구매자의 연락을 손꼽아 기다립니다. 구매자의 연락이 오면 직접 만나거나 택배로 티켓을 거래합니다. 이렇게 판매자와 구매자 모두 티켓을 사고팔기까지에 많은 단계를 거치게 됩니다. 또한 거래 도중 티켓이 보장되지 않았거나 원하는 금액을 얻지 못하는 경우가 발생할 수 있습니다.<br><br>실물 티켓 거래라는 단점을 보완하고 개인이 직접 거래하는 중고 티켓을 확실하게 보장하며 안전하게 거래할 수 있도록 합니다. 또한 공연 현장에서 본인 확인 절차를 위해 실물 티켓으로 다시 교환 후 입장하는 시스템의 불편함을 큐얼 코드 한 번으로 줄이고자 하였습니다.",
-        "mainImg": "/work-detail/ticketX/splash-screen.jpeg"
-      },
-      "component": {
-        "designKeyword": {
-          "title": "Design Keyword",
-          "description": "티켓: 티켓의 가장 단순한 형태인 직사각형에서부터 출발하여, '흩어져있던 티켓을 모아 서로에게 연결해준다는 의미'를 담아 도식화된 티켓들이 모여 텍스트를 이루고 형태를 띠게 됩니다.<br><br>각진: 티켓에서 뻗어 나온 형태로 곡선 없이 각져 있어 강하고 잘 다듬어진 느낌을 전달해 줍니다. 이는 페스티벌의 묵직함과 열정을 담고 있으며, 어두운 무채색 컬러에 화려한 조명을 상징하는 옐로를 포인트로 디자인하였습니다.",
-          "image": "/work-detail/ticketX/icons.jpg"
-        },
-        "contentsImage": {
-          "imgTop": "/work-detail/ticketX/application-1.jpg",
-          "subTitle": "Symbol",
-          "subDesc": "티켓을 형상화한 텍스트 모티프를 바탕으로 T와 X의 조합으로 이루어졌습니다."
-        },
-        "imgFull01": "/work-detail/ticketX/application-2.jpg",
-        "imgFull02": "/work-detail/ticketX/application-2.jpg",
-        "textTop":{
-          "text": "티켓 구매 페이지",
-          "description": "해당 페스티벌을 눌렀을 때 나오는 페이지로 공연 일정이 요일별로 구분되어 있어 선택이 쉬우며, 남은 중고 티켓의 매수를 알려줍니다."
-        },
-        "imgFull03": "/work-detail/ticketX/application-2.jpg",
-        "textBottom": {
-          "text": "마이 티켓",
-          "description": "화면 하단의 마이티켓 탭으로 들어가면 내가 구매한 티켓이 나오고, 입장과 선물, 판매가 쉽습니다."
-        },
-        "imgFull04": "/work-detail/ticketX/application-2.jpg"
+        "imgFull04": "/work-detail/ticketX/pc-main.jpg"
       }
     }
   ]
