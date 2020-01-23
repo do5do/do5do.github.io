@@ -145,7 +145,7 @@
 		margin-bottom: 0.6vw;
 		background-image: linear-gradient(#000, #000);
 		background-repeat: no-repeat;
-		background-size: 0 0.3vw;
+		background-size: 0 0.28vw;
 		background-position: 0 bottom;
 		transition: all .35s ease-in;
 
@@ -184,7 +184,7 @@
 	// 선 그어지고 설명 글자 나오는 active
 	&.active {
 		.under-line {
-			background-size: 100% 0.3vw;
+			background-size: 100% 0.28vw;
 		}
 		.active-text {
 			width: 100%;

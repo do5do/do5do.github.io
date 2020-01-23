@@ -15,7 +15,7 @@ header {
 	/*
 	header main - scroll: 로고 타입 제거, 사이즈 고정
 	header sub - scroll: 로고 타입 제거, 사이즈 작게 조정
-	header work detail - 로고 타입 제거, header 자체 사이즈 작게
+	header work detail: 로고 타입 제거, header 자체 사이즈 작게
 	*/
 	&.scroll {
 		height: 5.4vw;
@@ -84,6 +84,9 @@ header {
 	@media (max-width: $grid-bp-mobile) {
 		.logo-symbol {
 			width: 16vw;
+			.stroke {
+				stroke-width: 2.6;
+			}
 		}
 
 		.logo-type {
