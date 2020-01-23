@@ -67,10 +67,6 @@
 			}
 		}
 	}
-
-	@media (max-width: $grid-bp-mobile) {
-		height: calc(var(--vh, 1vh) * 100);
-	}
 }
 
 // 메인 텍스트 영역
