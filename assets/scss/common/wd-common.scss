@@ -100,7 +100,7 @@
 
 		// 마진 좁게 (2단계)
 		&.margin-narrow {
-			margin-left: 4vw;
+			margin-left: 5vw;
 			@media (max-width: $grid-bp-mobile) {
 				margin-left: 0;
 				margin-top: 10vw;
@@ -109,7 +109,7 @@
 
 		// 마진 살짝 좁게 (1단계)
 		&.margin-narrow-little {
-			margin-left: 6vw;
+			margin-left: 7vw;
 			@media (max-width: $grid-bp-mobile) {
 				margin-left: 0;
 				margin-top: 12vw;
