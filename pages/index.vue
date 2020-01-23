@@ -55,6 +55,19 @@
         textUp: false,
       }
     },
+    created () {
+      if (process.client) {
+        window.addEventListener('scroll', () => {
+          this.mainTextUp();
+        });
+      }
+    },
+    mounted () {
+      // 초기 실행
+      this.mainTextUp();
+      // tablet 감지
+      this.detectTablet();
+    },
     methods: {
       showUnderLine (n) {
         switch (n) {
@@ -74,16 +87,22 @@
           this.textUp = true;
         }
       },
-    },
-    created () {
-      if (process.client) {
-        window.addEventListener('scroll', () => {
-          this.mainTextUp();
-        });
+      // tablet 감지해서 main text 고정
+      detectTablet () {
+        let underLine = document.querySelectorAll('.under-line');
+        let activeText = document.querySelectorAll('.active-text');
+
+        if (this.$device.isTablet) {
+          // querySelectorAll은 한번에 선택이 안되서 모두 선택하려고 for로 갯수만큼 돌려줌
+          for (let i=0; i < underLine.length; i++) {
+            underLine[i].style.backgroundSize = '100% 0.29vw';
+          }
+
+          for (let j=0; j < activeText.length; j++) {
+            activeText[j].style.width = '100%';
+          }
+        }
       }
-    },
-    mounted () {
-      this.mainTextUp();
     }
   }
 </script>

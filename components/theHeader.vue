@@ -116,26 +116,36 @@
 				window.addEventListener('scroll', () => {
 					if (matchMedia("(max-width:1000px)").matches) {
 						// 1000px 이하 모바일 버전
-						this.mainScrollChangeMobile();
+						this.scrollChangeMobile();
 					} else {
 						// 1000px 초과 pc 버전
-						this.mainScrollChangePC();
+						this.scrollChangePC();
 					}
 				})
 			}
 		},
 		watch: {
 			$route() {
-				// header 실시간 감지
+				// header 페이지별 감지
 				this.detectHeader();
+				// tablet 감지 header text 변경
+				if (this.$device.isMobileOrTablet) {
+					this.emojiText = 'touch the text';
+				}
 			}
 		},
 		mounted() {
-			// header 감지 초기 실행
+			// 초기 실행
 			this.detectHeader();
 
-			// 랜더링 후 리사이징 감지
+			// tablet 감지 header text 변경
+			if (this.$device.isMobileOrTablet) {
+				this.emojiText = 'touch the text';
+			}
+
+			// 리사이징 할 때마다 감지
 			window.addEventListener('resize', () => {
+				// header 감지
 				this.detectHeader();
 			});
 		},
@@ -183,7 +193,7 @@
 					this.handleHeaderPC();
 				}
 			},
-			mainScrollChangePC () {
+			scrollChangePC () {
 				if (window.scrollY <= 130) {
 					this.isScroll = false;
 					this.mainText = true;
@@ -197,7 +207,7 @@
 					this.mainText = false;
 				}
 			},
-			mainScrollChangeMobile () {
+			scrollChangeMobile () {
 				if (window.scrollY <= 100) {
 					this.mainText = true;
 					this.logoType = true;

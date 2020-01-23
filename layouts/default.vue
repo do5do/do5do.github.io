@@ -21,52 +21,19 @@
         footerShow: true,
       }
     },
-    created () {
-      if (process.client) {
-        // work detail body overflow 조절
-        if (matchMedia("(max-width:1000px)").matches) {
-          // 모바일 버전
-          if (this.$route.name === 'work-wd') {
-            document.body.style.overflow = 'auto';
-          }
-        } else {
-          // pc 버전
-          if (this.$route.name === 'work-wd') {
-            document.body.style.overflow = 'hidden';
-          } else {
-            document.body.style.overflow = 'auto';
-          }
-        }
-      }
-    },
     watch: {
       $route () {
         // footer, bg 실시간 감지
         this.detectWorkWid();
-
-        // work detail body overflow 조절
-        if (matchMedia("(max-width:1000px)").matches) {
-          // 모바일 버전
-          if (this.$route.name === 'work-wd') {
-            document.body.style.overflow = 'auto';
-          }
-        } else {
-          // pc 버전
-          if (this.$route.name === 'work-wd') {
-            document.body.style.overflow = 'hidden';
-          } else {
-            document.body.style.overflow = 'auto';
-          }
-        }
       }
     },
     mounted () {
       // vh control 초기 실행
       this.handle100vh();
-      // footer, bg 감지 control 초기 실행
+      // wd 페이지 감지 초기 실행
       this.detectWorkWid();
 
-      // resize할때 실행
+      // resize 할 때마다 실행
       window.addEventListener('resize', () => {
         this.handle100vh();
         this.detectWorkWid();
@@ -82,17 +49,20 @@
       handleWorkWidPC () {
         if (this.$route.name === 'work-wd') {
           this.footerShow = false;
+          document.body.style.overflow = 'hidden';
         } else {
           this.footerShow = true;
+          document.body.style.overflow = 'auto';
         }
       },
       // footer show/hide
       handleWorkWidMobile () {
         if (this.$route.name === 'work-wd') {
           this.footerShow = true;
+          document.body.style.overflow = 'auto';
         }
       },
-      // media 감지
+      // matchMedia
       detectWorkWid () {
         if (matchMedia("(max-width:1000px)").matches) {
           // 모바일 버전
@@ -101,7 +71,7 @@
           // pc 버전
           this.handleWorkWidPC();
         }
-      }
+      },
     }
   }
 </script>
