@@ -13,34 +13,6 @@
       "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
       "tag": "bx/uxui",
       "title": "ticket X"
-    },
-    {
-      "id": 3,
-      "ctg": ["All", "User Experience / User Interface", "illustration"],
-      "thumbnail": "",
-      "tag": "bx/uxui/illustration",
-      "title": "transition"
-    },
-    {
-      "id": 4,
-      "ctg": ["All", "User Experience / User Interface"],
-      "thumbnail": "",
-      "tag": "bx/uxui",
-      "title": "transform"
-    },
-    {
-      "id": 5,
-      "ctg": ["All", "illustration"],
-      "thumbnail": "",
-      "tag": "bx/illustration",
-      "title": "lilaland"
-    },
-    {
-      "id": 6,
-      "ctg": ["All", "Graphic", "illustration"],
-      "thumbnail": "",
-      "tag": "graphic",
-      "title": "true"
     }
   ]
 }
