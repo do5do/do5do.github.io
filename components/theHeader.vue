@@ -218,9 +218,7 @@
 				}
 			},
 			scrollWd () {
-				this.headerMain = false;
-				this.logoType = false;
-
+				// scroll 없어야 하기에 비워줌
 				if (window.scrollY) {}
 			},
 			scrollChange () {
