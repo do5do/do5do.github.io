@@ -149,14 +149,17 @@
 				if (this.$route.name === 'index') {
 					this.headerMain = true;
 					this.isScroll = false;
+					this.logoType = true;
 
 				} else if (this.$route.name === 'work-wd' || this.$route.params === `work/${this.$route.params.wd}`) {
 					this.headerMain = false;
 					this.isScroll = true;
+					this.logoType = false;
 
 				} else {
 					this.headerMain = false;
 					this.isScroll = false;
+					this.logoType = true;
 				}
 			},
 			// header mobile control
@@ -183,14 +186,17 @@
 				if (window.scrollY <= 130) {
 					this.isScroll = false;
 					this.mainText = true;
+					this.logoType = true;
 
 				} else if (window.scrollY > 130 && window.scrollY <= 560) {
 					this.isScroll = true;
 					this.mainText = true;
+					this.logoType = true;
 
 				} else if (window.scrollY > 560) {
 					this.isScroll = true;
 					this.mainText = false;
+					this.logoType = true;
 				}
 			},
 			scrollMobile () {
