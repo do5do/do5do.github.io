@@ -23,20 +23,18 @@
     },
     watch: {
       $route () {
-        // footer, bg 실시간 감지
-        this.detectWorkWid();
+        this.detectWd();
       }
     },
     mounted () {
-      // vh control 초기 실행
+      // 초기 실행
       this.handle100vh();
-      // wd 페이지 감지 초기 실행
-      this.detectWorkWid();
+      this.detectWd();
 
       // resize 할 때마다 실행
       window.addEventListener('resize', () => {
         this.handle100vh();
-        this.detectWorkWid();
+        this.detectWd();
       });
     },
     methods: {
@@ -45,7 +43,7 @@
         let vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`);
       },
-      // footer show/hide
+      // footer show/hide, swiper overflow control
       handleWorkWidPC () {
         if (this.$route.name === 'work-wd') {
           this.footerShow = false;
@@ -55,15 +53,14 @@
           document.body.style.overflow = 'auto';
         }
       },
-      // footer show/hide
+      // footer show/hide, swiper overflow control
       handleWorkWidMobile () {
         if (this.$route.name === 'work-wd') {
           this.footerShow = true;
           document.body.style.overflow = 'auto';
         }
       },
-      // matchMedia
-      detectWorkWid () {
+      detectWd () {
         if (matchMedia("(max-width:1000px)").matches) {
           // 모바일 버전
           this.handleWorkWidMobile();

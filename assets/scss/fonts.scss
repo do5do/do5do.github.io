@@ -1,5 +1,4 @@
 // helvetica
-
 @font-face {
 	font-family: 'Helvetica Neue LT Pro';
 	src: url('/fonts/HelveticaNeueLTPro-BlkIt.eot');
@@ -10,16 +9,6 @@
 }
 
 // apple gothic neo
-
-@font-face {
-	font-family: 'AppleSDGothicNeo';
-	src: url('/fonts/AppleSDGothicNeoH00.eot');
-	src: url('/fonts/AppleSDGothicNeoH00.eot?#iefix') format('embedded-opentype'),
-	url('/fonts/AppleSDGothicNeoH00.woff') format('woff');
-	font-weight: 900;
-	font-style: normal;
-}
-
 @font-face {
 	font-family: 'AppleSDGothicNeo';
 	src: url('/fonts/AppleSDGothicNeoR00.eot');
@@ -53,5 +42,14 @@
 	src: url('/fonts/AppleSDGothicNeoB00.eot?#iefix') format('embedded-opentype'),
 	url('/fonts/AppleSDGothicNeoB00.woff') format('woff');
 	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AppleSDGothicNeo';
+	src: url('/fonts/AppleSDGothicNeoH00.eot');
+	src: url('/fonts/AppleSDGothicNeoH00.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/AppleSDGothicNeoH00.woff') format('woff');
+	font-weight: 900;
 	font-style: normal;
 }

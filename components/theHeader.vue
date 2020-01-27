@@ -83,9 +83,9 @@
 		data () {
 			return {
 				// header 관련
+				isScroll: false,
 				headerMain: true,
 				mainText: true,
-				isScroll: false,
 				logoType: true,
 				emojiText: 'move mouse over the text',
 
@@ -110,44 +110,28 @@
 			}
 		},
 		created () {
-			// process.client는 가상 돔이 그려진 후 실행시킴
-			if (process.client) {
-				// scroll 감지
-				window.addEventListener('scroll', () => {
-					if (matchMedia("(max-width:1000px)").matches) {
-						// 1000px 이하 모바일 버전
-						this.scrollChangeMobile();
-					} else {
-						// 1000px 초과 pc 버전
-						this.scrollChangePC();
-					}
-				})
+			// tablet 감지 header text 변경
+			if (this.$device.isMobileOrTablet) {
+				this.emojiText = 'touch the text';
 			}
 		},
 		watch: {
 			$route() {
 				// header 페이지별 감지
 				this.detectHeader();
-				// tablet 감지 header text 변경
-				if (this.$device.isMobileOrTablet) {
-					this.emojiText = 'touch the text';
-				}
 			}
 		},
-		mounted() {
+		mounted () {
 			// 초기 실행
 			this.detectHeader();
 
-			// tablet 감지 header text 변경
-			if (this.$device.isMobileOrTablet) {
-				this.emojiText = 'touch the text';
-			}
-
-			// 리사이징 할 때마다 감지
+			// 리사이징 할 때마다 header 감지
 			window.addEventListener('resize', () => {
-				// header 감지
 				this.detectHeader();
 			});
+
+			// scroll 감지
+			window.addEventListener('scroll', this.scrollChange);
 		},
 		methods: {
 			// mobile nav control
@@ -165,10 +149,11 @@
 				if (this.$route.name === 'index') {
 					this.headerMain = true;
 					this.isScroll = false;
-					this.mainText = true;
+
 				} else if (this.$route.name === 'work-wd' || this.$route.params === `work/${this.$route.params.wd}`) {
 					this.headerMain = false;
 					this.isScroll = true;
+
 				} else {
 					this.headerMain = false;
 					this.isScroll = false;
@@ -179,6 +164,7 @@
 				if (this.$route.name === 'index') {
 					this.headerMain = true;
 					this.isScroll = false;
+
 				} else {
 					this.headerMain = false;
 					this.isScroll = false;
@@ -193,7 +179,7 @@
 					this.handleHeaderPC();
 				}
 			},
-			scrollChangePC () {
+			scrollPC () {
 				if (window.scrollY <= 130) {
 					this.isScroll = false;
 					this.mainText = true;
@@ -207,21 +193,46 @@
 					this.mainText = false;
 				}
 			},
-			scrollChangeMobile () {
+			scrollMobile () {
 				if (window.scrollY <= 100) {
+					this.isScroll = false;
 					this.mainText = true;
 					this.logoType = true;
 
 				} else if (window.scrollY > 100 && window.scrollY <= 360) {
+					this.isScroll = false;
 					this.mainText = true;
 					this.logoType = false;
 
 				} else if (window.scrollY > 360) {
+					this.isScroll = false;
 					this.mainText = false;
 					this.logoType = false;
 					this.emojiText = 'touch the text';
 				}
 			},
+			scrollWd () {
+				this.headerMain = false;
+				this.logoType = false;
+
+				if (window.scrollY) {}
+			},
+			scrollChange () {
+				if (matchMedia("(max-width:1000px)").matches) {
+					// 모바일
+					this.scrollMobile();
+				} else {
+					// PC
+					if (this.$route.name === 'work-wd' || this.$route.params === `work/${this.$route.params.wd}`) {
+						this.scrollWd();
+					} else {
+						this.scrollPC();
+					}
+				}
+			},
+		},
+		beforeDestroy() {
+			window.removeEventListener('scroll', this.scrollChange);
 		}
 	}
 </script>

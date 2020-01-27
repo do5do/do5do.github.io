@@ -20,31 +20,20 @@
 		watch: {
 			$route () {
 				// 실시간 감지
-				this.detectMargin();
+				this.handleFooterMargin();
 			}
 		},
 		mounted () {
 			// 초기 실행
-			this.detectMargin();
-
-			// resize 할때마다 감지
-			window.addEventListener('resize', () => {
-				this.detectMargin();
-			});
+			this.handleFooterMargin();
 		},
 		methods: {
-			// mobile work detail에서 footer margin 없애기
+			// mobile work detail 페이지에서 footer margin 없애기 (pc는 footer자체가 false임)
 			handleFooterMargin () {
 				if (this.$route.name === 'work-wd') {
 					this.footerMarginNone = true;
 				} else {
 					this.footerMarginNone = false;
-				}
-			},
-			detectMargin () {
-				if (matchMedia("(max-width:1000px)").matches) {
-					// mobile
-					this.handleFooterMargin();
 				}
 			}
 		}
