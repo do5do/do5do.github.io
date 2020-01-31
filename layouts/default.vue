@@ -84,7 +84,7 @@
   }
 
   .noise-bg {
-    display: none;
+    //display: none;
     position: absolute;
     background:url(/images/body-noise.png) repeat center;
     background-size: 180px;

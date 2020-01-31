@@ -13,6 +13,36 @@
       "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
       "tag": "bx/uxui",
       "title": "ticket X"
+    },
+    {
+      "id": 3,
+      "ctg": ["All", "User Experience / User Interface", "illustration"],
+      "thumbnail": "/work-detail/conde/thumbnail.jpg",
+      "tag": "uxui/illustration",
+      "title": "co&de"
+    },
+    {
+      "id": 4,
+      "ctg": ["All", "User Experience / User Interface", "Brand Experience"],
+      "thumbnail": "/work-detail/fooddeuk/thumbnail.jpg",
+      "tag": "bx/uxui",
+      "title": "fooddeuk"
+    },
+    {
+      "id": 5,
+      "ctg": ["All", "illustration"],
+      "thumbnail": "/work-detail/theMoment/thumbnail.jpg",
+      "tag": "illustration",
+      "title": "그때 그 순간의 나, 우리들",
+      "kor": true
+    },
+    {
+      "id": 6,
+      "ctg": ["All", "illustration", "Graphic"],
+      "thumbnail": "/work-detail/fooddeuk/thumbnail.jpg",
+      "tag": "illustration/graphic",
+      "title": "라라올라 MV",
+      "kor": true
     }
   ]
 }

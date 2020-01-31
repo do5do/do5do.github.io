@@ -7,7 +7,7 @@
 					<div class="main-description__box items">
 						<div class="wd-paragraph pd-bottom">
 							<nuxt-link to="/work">
-								<p class="title font-helve">{{workDetail.static.title}}</p>
+								<p class="title font-helve" :class="{'title-kor': workDetail.static.kor}">{{workDetail.static.title}}</p>
 							</nuxt-link>
 							<p class="description">
 								{{workDetail.static.ctg}}<br>
@@ -31,9 +31,9 @@
 								</p>
 							</div>
 							<div class="wd-paragraph bottom">
-								<p class="sub-title">{{workDetail.static.subtitle}}</p>
+								<p class="sub-title">Situation</p>
 								<p class="description"
-								   v-html="workDetail.static.paragraph"
+								   v-html="workDetail.static.situation"
 								></p>
 							</div>
 						</div>
@@ -82,6 +82,56 @@
 							:imgFull04="workDetail.component.imgFull04"
 						/>
 					</template>
+
+					<template v-if="workDetail.id === 3">
+						<conde
+							:title="workDetail.component.visualMotif.title"
+							:description="workDetail.component.visualMotif.description"
+							:image="workDetail.component.visualMotif.image"
+							:imgFull01="workDetail.component.imgFull01"
+							:textTop="workDetail.component.textTop.text"
+							:textTopDesc="workDetail.component.textTop.description"
+							:imgFull02="workDetail.component.imgFull02"
+							:imgFull03="workDetail.component.imgFull03"
+							:textBottom="workDetail.component.textBottom.text"
+							:textBottomDesc="workDetail.component.textBottom.description"
+						/>
+					</template>
+
+					<template v-if="workDetail.id === 4">
+						<fooddeuk
+							:title="workDetail.component.visualMotif.title"
+							:description="workDetail.component.visualMotif.description"
+							:image="workDetail.component.visualMotif.image"
+							:imgFull01="workDetail.component.imgFull01"
+							:textBottom="workDetail.component.textBottom.text"
+							:textBottomDesc="workDetail.component.textBottom.description"
+							:imgFull02="workDetail.component.imgFull02"
+							:imgFull03="workDetail.component.imgFull03"
+						/>
+					</template>
+
+					<template v-if="workDetail.id === 5">
+						<theMoment
+							:imgFull01="workDetail.component.imgFull01"
+							:textTop="workDetail.component.textTop.text"
+							:textTopDesc="workDetail.component.textTop.description"
+							:imgFull02="workDetail.component.imgFull02"
+							:textTop2="workDetail.component.textTop2.text"
+							:textTopDesc2="workDetail.component.textTop2.description"
+							:imgFull03="workDetail.component.imgFull03"
+							:textBottom="workDetail.component.textBottom.text"
+							:textBottomDesc="workDetail.component.textBottom.description"
+							:imgFull04="workDetail.component.imgFull04"
+							:textBottom2="workDetail.component.textBottom2.text"
+							:textBottomDesc2="workDetail.component.textBottom2.description"
+						/>
+					</template>
+
+					<template v-if="workDetail.id === 6">
+						<lalaollaMV
+						/>
+					</template>
 					<!-- detail contents component : e -->
 
 					<!-- work detail footer -->
@@ -106,19 +156,26 @@
 </template>
 
 <script>
-	import ticketX from '~/components/work-detail/ticketX.vue'
 	import toast from '~/components/work-detail/toast.vue'
+	import ticketX from '~/components/work-detail/ticketX.vue'
+	import conde from '~/components/work-detail/conde.vue'
+	import fooddeuk from '~/components/work-detail/fooddeuk.vue'
+	import theMoment from '~/components/work-detail/theMoment.vue'
+	import lalaollaMV from '~/components/work-detail/lalaollaMV.vue'
 	import axios from "axios"
 
 	export default {
 		components: {
+			toast,
 			ticketX,
-			toast
+			conde,
+			fooddeuk,
+			theMoment,
+			lalaollaMV,
 		},
 		// json 비동기로 불러오기
 		async asyncData({params}) {
 			let {data: workDetailData} = await axios.get(process.env.API_SERVER_ADDRESS + '/data/work-detail.json');
-			let options = {};
 
 			// 데이터를 참조할 수 있게 변수에 저장
 			return {
@@ -126,11 +183,6 @@
 				workDataList: workDetailData.data.length,
 				workDetail: workDetailData.data,
 			};
-
-			// The server-side needs a full url to work
-			// if (process.server) {
-			// 	options.baseURL = `http://${process.env.API_SERVER_ADDRESS}/work/${this.workNumber}`
-			// }
 		},
 		data () {
 			return {
@@ -141,14 +193,14 @@
 					scrollbar: {
 						el: '.swiper-scrollbar'
 					},
-					init: true,
 					mousewheel: {
 						releaseOnEdges: true
 					},
 					breakpoints: {
 						// 1000 이하 모바일
 						1000: {
-							init: false
+							init: false,
+							//direction: 'vertical',
 						}
 					}
 				},
@@ -186,6 +238,7 @@
 			}
 		},
 		methods: {
+			// 사이트가 준비중일때
 			handleSite () {
 				if (this.workDetail.static.link === '' || this.workDetail.static.link === 'javascript:void(0)') {
 					alert('준비중 입니다.');

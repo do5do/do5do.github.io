@@ -10,7 +10,7 @@
 	}
 
 	.swiper-slide {
-		width: auto;
+		width: auto; // 가로 스크롤
 
 		@media (max-width: $grid-bp-mobile) {
 			width: 100% !important;
@@ -31,7 +31,6 @@
 // work detail section
 .work-detail {
 	display: flex;
-	//overflow-x: scroll;
 	justify-content: flex-start;
 	width: 100%;
 	height: 100%;
@@ -74,8 +73,6 @@
 		display: flex;
 		flex-direction: column;
 		height: 100%;
-		//width: auto;
-		//flex-wrap: wrap;
 
 		@media (max-width: $grid-bp-mobile) {
 			width: 100%;
@@ -88,14 +85,29 @@
 		.title {
 			font-size: 2.4vw;
 			padding-bottom: .2vw;
-			//font-size: calc(100vh - 41.5vw);
+
+			// work detail title 한글일때
+			&.title-kor {
+				font-family: 'Apple SD Gothic Neo', 'AppleSDGothicNeo';
+				font-style: normal;
+				font-size: 1.85vw;
+				padding-bottom: .6vw;
+			}
 
 			@media (max-width: $grid-bp-mobile) {
 				font-size: 10vw;
 				padding-bottom: 2.8vw;
+				&.title-kor {
+					font-size: 7.6vw;
+					padding-bottom: 3.6vw;
+				}
 				@media (min-width: $grid-bp-tablet-start) {
 					font-size: 8vw;
 					padding-bottom: 1.2vw;
+					&.title-kor {
+						font-size: 5.7vw;
+						padding-bottom: 2vw;
+					}
 				}
 			}
 		}

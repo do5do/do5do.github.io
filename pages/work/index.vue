@@ -48,7 +48,7 @@
 							<div class="list-content">
 								<figure class="img-box" :style="{backgroundImage: `url(${list.thumbnail})`}"></figure>
 								<p class="list-tag">{{list.tag}}</p>
-								<p class="list-title">{{list.title}}</p>
+								<p class="list-title" :class="{'title-kor': list.kor}">{{list.title}}</p>
 							</div>
 						</nuxt-link>
 					</div>

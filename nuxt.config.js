@@ -42,7 +42,7 @@ module.exports = {
   },
   // API 주소 전역 선언
   env: {
-    //API_SERVER_ADDRESS: 'http://localhost:3000/'
+    API_SERVER_ADDRESS: 'http://localhost:3000/'
 
     // mobile 확인용 (hollys 2층)
     //API_SERVER_ADDRESS: 'http://192.168.1.215:3333/'
@@ -57,7 +57,7 @@ module.exports = {
     //API_SERVER_ADDRESS: 'http://192.168.0.6:3333/'
 
     // 배포용 Git Page
-    API_SERVER_ADDRESS: 'https://do5do.github.io'
+    //API_SERVER_ADDRESS: 'https://do5do.github.io'
   },
   /*
   ** Customize the progress bar color
