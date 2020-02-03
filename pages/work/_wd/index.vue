@@ -84,34 +84,28 @@
 					</template>
 
 					<template v-if="workDetail.id === 3">
-						<conde
-							:title="workDetail.component.visualMotif.title"
-							:description="workDetail.component.visualMotif.description"
-							:image="workDetail.component.visualMotif.image"
+						<lalaollaMV
+							:paraTopTitle="workDetail.component.paragraphTop.title"
+							:paraTopDesc="workDetail.component.paragraphTop.description"
 							:imgFull01="workDetail.component.imgFull01"
-							:textTop="workDetail.component.textTop.text"
-							:textTopDesc="workDetail.component.textTop.description"
 							:imgFull02="workDetail.component.imgFull02"
 							:imgFull03="workDetail.component.imgFull03"
+							:imgFull04="workDetail.component.imgFull04"
+							:imgFull05="workDetail.component.imgFull05"
+							:textTop="workDetail.component.textTop.text"
+							:textTopDesc="workDetail.component.textTop.description"
+							:imgFull06="workDetail.component.imgFull06"
+							:textTop2="workDetail.component.textTop2.text"
+							:textTopDesc2="workDetail.component.textTop2.description"
+							:imgFull07="workDetail.component.imgFull07"
 							:textBottom="workDetail.component.textBottom.text"
 							:textBottomDesc="workDetail.component.textBottom.description"
+							:imgFull08="workDetail.component.imgFull08"
+							:imgFull09="workDetail.component.imgFull09"
 						/>
 					</template>
 
 					<template v-if="workDetail.id === 4">
-						<fooddeuk
-							:title="workDetail.component.visualMotif.title"
-							:description="workDetail.component.visualMotif.description"
-							:image="workDetail.component.visualMotif.image"
-							:imgFull01="workDetail.component.imgFull01"
-							:textBottom="workDetail.component.textBottom.text"
-							:textBottomDesc="workDetail.component.textBottom.description"
-							:imgFull02="workDetail.component.imgFull02"
-							:imgFull03="workDetail.component.imgFull03"
-						/>
-					</template>
-
-					<template v-if="workDetail.id === 5">
 						<theMoment
 							:imgFull01="workDetail.component.imgFull01"
 							:textTop="workDetail.component.textTop.text"
@@ -128,8 +122,31 @@
 						/>
 					</template>
 
+					<template v-if="workDetail.id === 5">
+						<conde
+							:title="workDetail.component.visualMotif.title"
+							:description="workDetail.component.visualMotif.description"
+							:image="workDetail.component.visualMotif.image"
+							:imgFull01="workDetail.component.imgFull01"
+							:textTop="workDetail.component.textTop.text"
+							:textTopDesc="workDetail.component.textTop.description"
+							:imgFull02="workDetail.component.imgFull02"
+							:imgFull03="workDetail.component.imgFull03"
+							:textBottom="workDetail.component.textBottom.text"
+							:textBottomDesc="workDetail.component.textBottom.description"
+						/>
+					</template>
+
 					<template v-if="workDetail.id === 6">
-						<lalaollaMV
+						<fooddeuk
+							:title="workDetail.component.visualMotif.title"
+							:description="workDetail.component.visualMotif.description"
+							:image="workDetail.component.visualMotif.image"
+							:imgFull01="workDetail.component.imgFull01"
+							:textBottom="workDetail.component.textBottom.text"
+							:textBottomDesc="workDetail.component.textBottom.description"
+							:imgFull02="workDetail.component.imgFull02"
+							:imgFull03="workDetail.component.imgFull03"
 						/>
 					</template>
 					<!-- detail contents component : e -->

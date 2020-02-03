@@ -7,7 +7,7 @@
 					<!-- pc category -->
 					<ul class="mobile-hidden">
 						<template v-for="(val, key) in option.getFilterData">
-							<template v-if="key === 'UX / UI'"></template>
+							<template v-if="key === 'UX / UI'"><!-- 값을 비워줌 --></template>
 							<template v-else>
 								<li :class="[key === filterOption ? 'active' : '']" @click="filter(key)">
 									<p class="page-sub-title">{{key}}</p>
@@ -34,26 +34,24 @@
 
 		<!-- work list section -->
 		<section class="work-list">
-			<client-only>
-				<isotope
-					class="work-list__ul"
-					ref="list"
-					:item-selector="'work-list__li'"
-					:list="workList"
-					:options="option"
-					@filter="filterOption = arguments[0]"
-				>
-					<div v-for="(list, index) in workList" :key="index">
-						<nuxt-link :to="{name: 'work-wd', params: {wd: list.id}}">
-							<div class="list-content">
-								<figure class="img-box" :style="{backgroundImage: `url(${list.thumbnail})`}"></figure>
-								<p class="list-tag">{{list.tag}}</p>
-								<p class="list-title" :class="{'title-kor': list.kor}">{{list.title}}</p>
-							</div>
-						</nuxt-link>
-					</div>
-				</isotope>
-			</client-only>
+			<isotope
+				class="work-list__ul"
+				ref="list"
+				:item-selector="'work-list__li'"
+				:list="workList"
+				:options="option"
+				@filter="filterOption = arguments[0]"
+			>
+				<div v-for="(list, index) in workList" :key="index">
+					<nuxt-link :to="{name: 'work-wd', params: {wd: list.id}}" class="list-content">
+						<figure class="img-box" :style="{backgroundImage: `url(${list.thumbnail})`}"></figure>
+						<div class="text-area">
+							<p class="list-tag">{{list.tag}}</p>
+							<p class="list-title" :class="{'title-kor': list.kor}">{{list.title}}</p>
+						</div>
+					</nuxt-link>
+				</div>
+			</isotope>
 		</section>
 	</div>
 </template>
