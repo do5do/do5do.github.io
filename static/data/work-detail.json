@@ -111,7 +111,11 @@
           "description": "뮤직비디오 일러스트에 등장했던 달 토끼 캐릭터입니다. 라라올라 노래의 하이라이트 부분에 맞춰 안무를 추는 토끼는 뮤직비디오에 또 다른 재미 요소로 삽입됩니다."
         },
         "imgFull08": "/work-detail/lalaollaMV/character.jpg",
-        "imgFull09": "/work-detail/lalaollaMV/cookie.gif"
+        "imgFull09": "/work-detail/lalaollaMV/cookie.gif",
+        "textBottom2":{
+          "text": "Credit Cookie",
+          "description": "뮤직 비디오의 마지막에 등장하는 쿠키 영상입니다."
+        }
       }
     },
     {
@@ -208,7 +212,7 @@
         "ctg": "Brand Experience, User Interface",
         "client": " / INIST",
         "overview": "이니스트바이오제약의 의약품 '라라올라'에서 '시밤'과 함께 진행한 포스터 시리즈입니다.",
-        "situation": "라라올라를 알리기 위한 홍보 수단으로 '시밤'과 함께 포스터 작업을 진행하였습니다. 포스터가 부착될 가게를 선정한 뒤 시밤의 글귀에 가게의 분위기를 더합니다.",
+        "situation": "라라올라를 알리기 위한 홍보 수단으로 진행했던 포스터 디자인입니다. 포스터가 부착될 가게를 선정한 뒤 시밤의 글귀에 가게의 분위기를 더합니다.",
         "mainImg": "/work-detail/lalaollaPoster/main.jpg"
       },
       "component": {

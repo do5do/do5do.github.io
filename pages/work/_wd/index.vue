@@ -102,6 +102,8 @@
 							:textBottomDesc="workDetail.component.textBottom.description"
 							:imgFull08="workDetail.component.imgFull08"
 							:imgFull09="workDetail.component.imgFull09"
+							:textBottom2="workDetail.component.textBottom2.text"
+							:textBottomDesc2="workDetail.component.textBottom2.description"
 						/>
 					</template>
 
