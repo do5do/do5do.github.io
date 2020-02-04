@@ -35,6 +35,7 @@
 			</p>
 		</div>
 
+		<!-- image layout : height full -->
 		<figure class="wd-image body-items margin-narrow-little">
 			<img :src="imgFull06" alt="포트폴리오 이미지">
 		</figure>
@@ -47,6 +48,7 @@
 			</p>
 		</div>
 
+		<!-- image layout : height full -->
 		<figure class="wd-image body-items margin-narrow-little">
 			<img :src="imgFull07" alt="포트폴리오 이미지">
 		</figure>
@@ -59,10 +61,12 @@
 			</p>
 		</div>
 
+		<!-- image layout : height full -->
 		<figure class="wd-image body-items margin-narrow-little">
 			<img :src="imgFull08" alt="포트폴리오 이미지">
 		</figure>
 
+		<!-- image layout : height full -->
 		<figure class="wd-image body-items">
 			<img :src="imgFull09" alt="포트폴리오 이미지">
 		</figure>

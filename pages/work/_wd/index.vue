@@ -138,6 +138,34 @@
 					</template>
 
 					<template v-if="workDetail.id === 6">
+						<karryAd
+							:paraTopTitle="workDetail.component.paragraphTop.title"
+							:paraTopDesc="workDetail.component.paragraphTop.description"
+							:imgFull01="workDetail.component.imgFull01"
+							:imgFull02="workDetail.component.imgFull02"
+							:textBottom="workDetail.component.textBottom.text"
+							:textBottomDesc="workDetail.component.textBottom.description"
+						/>
+					</template>
+
+					<template v-if="workDetail.id === 7">
+						<lalaollaPoster
+							:imgFull01="workDetail.component.imgFull01"
+							:textTop="workDetail.component.textTop.text"
+							:textTopDesc="workDetail.component.textTop.description"
+							:imgFull02="workDetail.component.imgFull02"
+							:textBottom="workDetail.component.textBottom.text"
+							:textBottomDesc="workDetail.component.textBottom.description"
+							:imgFull03="workDetail.component.imgFull03"
+							:textTop2="workDetail.component.textTop2.text"
+							:textTopDesc2="workDetail.component.textTop2.description"
+							:imgFull04="workDetail.component.imgFull04"
+							:textBottom2="workDetail.component.textBottom2.text"
+							:textBottomDesc2="workDetail.component.textBottom2.description"
+						/>
+					</template>
+
+					<template v-if="workDetail.id === 8">
 						<fooddeuk
 							:title="workDetail.component.visualMotif.title"
 							:description="workDetail.component.visualMotif.description"
@@ -179,6 +207,8 @@
 	import fooddeuk from '~/components/work-detail/fooddeuk.vue'
 	import theMoment from '~/components/work-detail/theMoment.vue'
 	import lalaollaMV from '~/components/work-detail/lalaollaMV.vue'
+	import karryAd from '~/components/work-detail/karryAd.vue'
+	import lalaollaPoster from '~/components/work-detail/lalaollaPoster.vue'
 	import axios from "axios"
 
 	export default {
@@ -189,6 +219,8 @@
 			fooddeuk,
 			theMoment,
 			lalaollaMV,
+			karryAd,
+			lalaollaPoster,
 		},
 		// json 비동기로 불러오기
 		async asyncData({params}) {
@@ -238,7 +270,7 @@
 			this.workDetail = data;
 
 			// client 정보 true, false
-			if (this.workDetail.static.client === '' || this.workDetail.static.client === null) {
+			if (this.workDetail.static.client === '' || this.workDetail.static.client === undefined) {
 				this.clientYN = false;
 			} else {
 				this.clientYN = true;

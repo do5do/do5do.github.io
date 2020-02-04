@@ -96,14 +96,14 @@
 
 			@media (max-width: $grid-bp-mobile) {
 				font-size: 10vw;
-				padding-bottom: 2.8vw;
+				padding-bottom: 2vw;
 				&.title-kor {
 					font-size: 7.6vw;
-					padding-bottom: 3.6vw;
+					padding-bottom: 3.2vw;
 				}
 				@media (min-width: $grid-bp-tablet-start) {
 					font-size: 8vw;
-					padding-bottom: 1.2vw;
+					padding-bottom: 1vw;
 					&.title-kor {
 						font-size: 5.7vw;
 						padding-bottom: 2vw;
@@ -116,6 +116,9 @@
 			a {
 				color: $gray-des;
 				padding-top: 2vh;
+				@media (max-width: $grid-bp-mobile) {
+					padding-top: 6vw;
+				}
 			}
 		}
 

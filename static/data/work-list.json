@@ -39,6 +39,21 @@
     },
     {
       "id": 6,
+      "ctg": ["All", "illustration"],
+      "thumbnail": "/work-detail/karryAd/thumbnail.jpg",
+      "tag": "illustration",
+      "title": "karry AD"
+    },
+    {
+      "id": 7,
+      "ctg": ["All", "Graphic"],
+      "thumbnail": "/work-detail/lalaollaPoster/thumbnail.jpg",
+      "tag": "graphic",
+      "title": "라라올라 Poster",
+      "kor": true
+    },
+    {
+      "id": 8,
       "ctg": ["All", "User Experience / User Interface", "Brand Experience"],
       "thumbnail": "/work-detail/fooddeuk/thumbnail.jpg",
       "tag": "bx/uxui",
