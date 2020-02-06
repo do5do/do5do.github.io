@@ -38,8 +38,8 @@
 			<img :src="imgFull04" alt="포트폴리오 이미지">
 		</figure>
 
-		<!-- text layout : top -->
-		<div class="wd-paragraph paragraph-bottom body-items margin-narrow wd-paragraph-narrow">
+		<!-- text layout : bottom -->
+		<div class="wd-paragraph paragraph-bottom body-items wd-paragraph-narrow margin-narrow">
 			<p class="sub-title">{{textBottom2}}</p>
 			<p class="description" v-html="textBottomDesc2"></p>
 		</div>

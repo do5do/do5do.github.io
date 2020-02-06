@@ -72,7 +72,7 @@
 		</figure>
 
 		<!-- text layout : bottom -->
-		<div class="wd-paragraph paragraph-bottom body-items wd-paragraph-narrow">
+		<div class="wd-paragraph paragraph-bottom body-items wd-paragraph-narrow margin-narrow">
 			<p class="sub-title">{{textBottom2}}</p>
 			<p class="description">
 				{{textBottomDesc2}}
