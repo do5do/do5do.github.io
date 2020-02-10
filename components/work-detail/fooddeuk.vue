@@ -33,6 +33,14 @@
 		<figure class="wd-image body-items">
 			<img :src="imgFull03" alt="포트폴리오 이미지">
 		</figure>
+
+		<!-- text layout : bottom -->
+		<div class="wd-paragraph paragraph-bottom body-items wd-paragraph-narrow margin-narrow">
+			<p class="sub-title">{{textBottom2}}</p>
+			<p class="description">
+				{{textBottomDesc2}}
+			</p>
+		</div>
 	</div>
 </template>
 
@@ -66,7 +74,15 @@
 			},
 			imgFull03: {
 				type: String,
-			}
+			},
+			textBottom2: {
+				type: String,
+				default: 'text top sub title'
+			},
+			textBottomDesc2: {
+				type: String,
+				default: 'text top description'
+			},
 		}
 	}
 </script>

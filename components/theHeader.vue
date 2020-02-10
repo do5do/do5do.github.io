@@ -37,8 +37,8 @@
 						</template>
 					</ul>
 
-					<!-- pdf download -->
-					<a href="" download class="pdf-download mobile-hidden">
+					<!-- pdf view -->
+					<a href="https://indd.adobe.com/view/de18fce1-c2dd-433b-989a-d463745c0985" target="_blank" class="pdf-download mobile-hidden">
 						<p>pdf</p>
 					</a>
 
@@ -66,8 +66,8 @@
 						</li>
 					</template>
 				</ul>
-				<!-- pdf download -->
-				<a href="" download class="pdf-download-mobile mobile-visible">
+				<!-- pdf view -->
+				<a href="https://indd.adobe.com/view/de18fce1-c2dd-433b-989a-d463745c0985" target="_blank" class="pdf-download-mobile mobile-visible">
 					<p>pdf</p>
 				</a>
 				<div class="cancel-box" @click="handleNavMobile()">

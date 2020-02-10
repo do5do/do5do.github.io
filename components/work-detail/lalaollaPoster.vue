@@ -53,7 +53,7 @@
 				type: String,
 			},
 			textTop: {
-				tyep: String,
+				type: String,
 				default: 'title top'
 			},
 			textTopDesc: {

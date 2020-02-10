@@ -45,6 +45,15 @@
 
 					<!-- detail contents component : s -->
 					<template v-if="workDetail.id === 1">
+						<lettering
+							:textTop="workDetail.component.textTop.text"
+							:textTopDesc="workDetail.component.textTop.description"
+							:imgFull01="workDetail.component.imgFull01"
+							:imgFull02="workDetail.component.imgFull02"
+						/>
+					</template>
+
+					<template v-if="workDetail.id === 2">
 						<toast
 							:paraTopTitle="workDetail.component.paragraphTop.title"
 							:paraTopDesc="workDetail.component.paragraphTop.description"
@@ -64,7 +73,7 @@
 						/>
 					</template>
 
-					<template v-if="workDetail.id === 2">
+					<template v-if="workDetail.id === 3">
 						<ticketX
 							:title="workDetail.component.visualMotif.title"
 							:description="workDetail.component.visualMotif.description"
@@ -83,7 +92,7 @@
 						/>
 					</template>
 
-					<template v-if="workDetail.id === 3">
+					<template v-if="workDetail.id === 4">
 						<lalaollaMV
 							:paraTopTitle="workDetail.component.paragraphTop.title"
 							:paraTopDesc="workDetail.component.paragraphTop.description"
@@ -107,7 +116,7 @@
 						/>
 					</template>
 
-					<template v-if="workDetail.id === 4">
+					<template v-if="workDetail.id === 5">
 						<theMoment
 							:imgFull01="workDetail.component.imgFull01"
 							:textTop="workDetail.component.textTop.text"
@@ -124,7 +133,13 @@
 						/>
 					</template>
 
-					<template v-if="workDetail.id === 5">
+					<template v-if="workDetail.id === 6">
+						<welcomeTo
+							:imgFull01="workDetail.component.imgFull01"
+						/>
+					</template>
+
+					<template v-if="workDetail.id === 7">
 						<conde
 							:title="workDetail.component.visualMotif.title"
 							:description="workDetail.component.visualMotif.description"
@@ -139,7 +154,7 @@
 						/>
 					</template>
 
-					<template v-if="workDetail.id === 6">
+					<template v-if="workDetail.id === 8">
 						<karryAd
 							:paraTopTitle="workDetail.component.paragraphTop.title"
 							:paraTopDesc="workDetail.component.paragraphTop.description"
@@ -150,7 +165,7 @@
 						/>
 					</template>
 
-					<template v-if="workDetail.id === 7">
+					<template v-if="workDetail.id === 9">
 						<lalaollaPoster
 							:imgFull01="workDetail.component.imgFull01"
 							:textTop="workDetail.component.textTop.text"
@@ -167,7 +182,7 @@
 						/>
 					</template>
 
-					<template v-if="workDetail.id === 8">
+					<template v-if="workDetail.id === 10">
 						<fooddeuk
 							:title="workDetail.component.visualMotif.title"
 							:description="workDetail.component.visualMotif.description"
@@ -177,6 +192,8 @@
 							:textBottomDesc="workDetail.component.textBottom.description"
 							:imgFull02="workDetail.component.imgFull02"
 							:imgFull03="workDetail.component.imgFull03"
+							:textBottom2="workDetail.component.textBottom2.text"
+							:textBottomDesc2="workDetail.component.textBottom2.description"
 						/>
 					</template>
 					<!-- detail contents component : e -->
@@ -211,6 +228,8 @@
 	import lalaollaMV from '~/components/work-detail/lalaollaMV.vue'
 	import karryAd from '~/components/work-detail/karryAd.vue'
 	import lalaollaPoster from '~/components/work-detail/lalaollaPoster.vue'
+	import lettering from '~/components/work-detail/lettering.vue'
+	import welcomeTo from '~/components/work-detail/welcomeTo.vue'
 	import axios from "axios"
 
 	export default {
@@ -223,6 +242,8 @@
 			lalaollaMV,
 			karryAd,
 			lalaollaPoster,
+			lettering,
+			welcomeTo
 		},
 		// json 비동기로 불러오기
 		async asyncData({params}) {
