@@ -2,20 +2,28 @@
   "data": [
     {
       "id": 1,
+      "ctg": ["All", "Graphic"],
+      "thumbnail": "/work-detail/lettering/thumbnail.jpg",
+      "tag": "graphic",
+      "title": "서울은 말이지",
+      "kor": true
+    },
+    {
+      "id": 2,
       "ctg": ["All", "Brand Experience", "illustration"],
       "thumbnail": "/work-detail/toast/thumbnail.jpg",
       "tag": "bx/illustration",
       "title": "toast"
     },
     {
-      "id": 2,
+      "id": 3,
       "ctg": ["All", "Brand Experience", "User Experience / User Interface"],
       "thumbnail": "/work-detail/ticketX/thumbnail.jpg",
       "tag": "bx/uxui",
-      "title": "ticket X"
+      "title": "Ticket X"
     },
     {
-      "id": 3,
+      "id": 4,
       "ctg": ["All", "illustration", "Graphic"],
       "thumbnail": "/work-detail/lalaollaMV/thumbnail.jpg",
       "tag": "illustration/graphic",
@@ -23,7 +31,7 @@
       "kor": true
     },
     {
-      "id": 4,
+      "id": 5,
       "ctg": ["All", "illustration"],
       "thumbnail": "/work-detail/theMoment/thumbnail.jpg",
       "tag": "illustration",
@@ -31,21 +39,28 @@
       "kor": true
     },
     {
-      "id": 5,
-      "ctg": ["All", "User Experience / User Interface", "illustration"],
-      "thumbnail": "/work-detail/conde/thumbnail.jpg",
-      "tag": "uxui/illustration",
-      "title": "co&de"
-    },
-    {
       "id": 6,
-      "ctg": ["All", "illustration"],
-      "thumbnail": "/work-detail/karryAd/thumbnail.jpg",
-      "tag": "illustration",
-      "title": "karry AD"
+      "ctg": ["All", "Graphic"],
+      "thumbnail": "/work-detail/welcomeTo/thumbnail.jpg",
+      "tag": "graphic",
+      "title": "welcome to"
     },
     {
       "id": 7,
+      "ctg": ["All", "User Experience / User Interface", "illustration"],
+      "thumbnail": "/work-detail/conde/thumbnail.jpg",
+      "tag": "uxui/illustration",
+      "title": "CO&DE"
+    },
+    {
+      "id": 8,
+      "ctg": ["All", "illustration"],
+      "thumbnail": "/work-detail/karryAd/thumbnail.jpg",
+      "tag": "illustration",
+      "title": "KARRY AD"
+    },
+    {
+      "id": 9,
       "ctg": ["All", "Graphic"],
       "thumbnail": "/work-detail/lalaollaPoster/thumbnail.jpg",
       "tag": "graphic",
@@ -53,7 +68,7 @@
       "kor": true
     },
     {
-      "id": 8,
+      "id": 10,
       "ctg": ["All", "User Experience / User Interface", "Brand Experience"],
       "thumbnail": "/work-detail/fooddeuk/thumbnail.jpg",
       "tag": "bx/uxui",
