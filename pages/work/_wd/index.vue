@@ -231,6 +231,7 @@
 	import lettering from '~/components/work-detail/lettering.vue'
 	import welcomeTo from '~/components/work-detail/welcomeTo.vue'
 	import axios from "axios"
+	import VueAwesomeSwiper from "vue-awesome-swiper";
 
 	export default {
 		components: {
@@ -271,8 +272,8 @@
 					breakpoints: {
 						// 1000 이하 모바일
 						1000: {
-							init: false,
-							//direction: 'vertical',
+							direction: 'vertical',
+							zoom: true
 						}
 					}
 				},
