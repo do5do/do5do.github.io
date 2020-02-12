@@ -72,7 +72,7 @@
 						</p>
 					</div>
 				</div>
-				<figure class="about-img">
+				<figure class="dododo-img">
 					<img src="/images/about-illust.jpg">
 				</figure>
 				<div class="about-info__bottom">
@@ -97,6 +97,11 @@
 							graphic / UXUI designer<br>
 							@2018.05 ~ 2019.06
 						</p>
+					</div>
+					<div class="description career-desc">
+						<span class="text-line">
+								<a href="https://indd.adobe.com/view/f1868664-77cf-4204-8bca-e12bd71d0e3c" target="_blank">경력기술서</a>
+							</span>
 					</div>
 				</div>
 			</div>

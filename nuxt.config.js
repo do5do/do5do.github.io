@@ -44,8 +44,6 @@ module.exports = {
   env: {
     //API_SERVER_ADDRESS: 'http://localhost:3000/'
 
-    //API_SERVER_ADDRESS: 'http://192.168.0.15:3333/'
-
     // 배포용 Git Page
     API_SERVER_ADDRESS: 'https://do5do.github.io'
   },
