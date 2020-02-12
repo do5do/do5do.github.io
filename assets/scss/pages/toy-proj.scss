@@ -94,6 +94,12 @@
 
 			@media (max-width: $grid-bp-mobile) {
 				order: 1;
+				width:100%;
+				margin: 24vw 0 0 0;
+
+				@media (min-width: $grid-bp-tablet-start) {
+					margin: 20vw 0 0 0;
+				}
 			}
 		}
 	}
@@ -122,12 +128,18 @@
 		}
 		.paragraph-left {
 			margin-top: 0.6vw;
+			@media (max-width: $grid-bp-mobile) {
+				margin-top: 24vw;
+			}
 		}
 	}
 	// dododo layout
 	.portfolio {
 		.paragraph-left {
 			margin-top: 4vw;
+			@media (max-width: $grid-bp-mobile) {
+				margin-top: 24vw;
+			}
 		}
 	}
 

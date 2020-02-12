@@ -5,7 +5,7 @@
 		height: calc(var(--vh, 1vh) * 100);
 
 		@media (max-width: $grid-bp-mobile) {
-			height: 100%; //height를 100vh로 고정해주면 스와이퍼가 작동함
+			height: 100%; //height를 100vh로 고정해주면 스와이퍼가 작동하지만, footer가 딸려올라와서 못씀
 		}
 	}
 

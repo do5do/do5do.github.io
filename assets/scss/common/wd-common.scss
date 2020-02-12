@@ -162,4 +162,14 @@
 			}
 		}
 	}
+
+	.wd-video {
+		//width: auto;
+		height:100%;
+		@media (max-width: $grid-bp-mobile) {
+			video {
+				width: 100%;
+			}
+		}
+	}
 }

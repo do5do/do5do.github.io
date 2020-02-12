@@ -59,6 +59,13 @@
 					<img src="/work-detail/ticketX/application-2.jpg" alt="어플리케이션">
 				</figure>
 			</div>
+
+			<!-- video autoplay: pc에서 스와이퍼 길이가 안맞아지는 오류 발생(video태그가 들어가면 발생함) -->
+			<div class="wd-video body-items">
+				<video style="height:100%;" autoplay loop muted playsinline preload="true">
+					<source :src="video01" type="video/mp4">
+				</video>
+			</div>
 		</section>
 	</div>
 </template>
