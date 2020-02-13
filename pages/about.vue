@@ -66,6 +66,7 @@
 						<p class="description">
 							<span class="bold">dohee Kim</span> / 1995.05.19<br>
 							+82)10 - 2455 - 7030<br>
+							based in Seoul
 							<span class="text-line">
 								<a href="mailto:#">do151015@gmail.com</a>
 							</span>
@@ -89,6 +90,11 @@
 							시각디자인학과 전공<br>
 							@2014.03 ~ 2018.02
 						</p>
+						<p class="description desc-pd-top">
+							<span class="bold">성모여자고등학교</span><br>
+							인문고<br>
+							@2011.03 ~ 2014.02
+						</p>
 					</div>
 					<div class="paragraph">
 						<p class="title font-helve">work</p>
@@ -98,7 +104,7 @@
 							@2018.05 ~ 2019.06
 						</p>
 					</div>
-					<div class="description career-desc">
+					<div class="description desc-pd-top">
 						<span class="text-line">
 								<a href="https://indd.adobe.com/view/f1868664-77cf-4204-8bca-e12bd71d0e3c" target="_blank">경력기술서</a>
 							</span>
