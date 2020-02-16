@@ -1,5 +1,19 @@
 <template>
 	<div class="wd-body">
+		<!-- contents image : img-top, text-bottom -->
+		<div class="wd-contents body-items">
+			<figure class="wd-image">
+				<img :src="contentsImgTop" alt="포트폴리오 이미지">
+			</figure>
+			<!-- text layout : 최대 2줄 -->
+			<div class="wd-paragraph">
+				<p class="sub-title">{{contentsSubtitle}}</p>
+				<p class="description">
+					{{contentsSubDesc}}
+				</p>
+			</div>
+		</div>
+
 		<!-- text layout : top -->
 		<div class="wd-paragraph body-items">
 			<p class="sub-title">{{paraTopTitle}}</p>
@@ -66,6 +80,17 @@
 <script>
 	export default {
 		props: {
+			contentsImgTop: {
+				type: String,
+			},
+			contentsSubtitle: {
+				type: String,
+				default: 'contents layout sub title'
+			},
+			contentsSubDesc: {
+				type: String,
+				default: 'contents layout sub description'
+			},
 			paraTopTitle: {
 				type: String,
 				default: 'title top'

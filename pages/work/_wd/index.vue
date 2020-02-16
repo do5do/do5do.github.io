@@ -18,7 +18,7 @@
 								<!-- 사이트 연결 -->
 								<template v-if="workDetail.static.visit">
 									<a :href="workDetail.static.link" :target="blank" @click="handleSite()">
-										<span class="text-line">Visit live</span>
+										<span class="text-line bold">Visit live</span>
 									</a>
 								</template>
 							</p>
@@ -45,18 +45,12 @@
 
 					<!-- detail contents component : s -->
 					<template v-if="workDetail.id === 1">
-						<lettering
-							:textTop="workDetail.component.textTop.text"
-							:textTopDesc="workDetail.component.textTop.description"
-							:imgFull01="workDetail.component.imgFull01"
-							:imgFull02="workDetail.component.imgFull02"
-						/>
-					</template>
-
-					<template v-if="workDetail.id === 2">
 						<toast
 							:paraTopTitle="workDetail.component.paragraphTop.title"
 							:paraTopDesc="workDetail.component.paragraphTop.description"
+							:contentsImgTop="workDetail.component.contentsImage.imgTop"
+							:contentsSubtitle="workDetail.component.contentsImage.subTitle"
+							:contentsSubDesc="workDetail.component.contentsImage.subDesc"
 							:imgFull01="workDetail.component.imgFull01"
 							:title="workDetail.component.visualMotif.title"
 							:description="workDetail.component.visualMotif.description"
@@ -73,7 +67,7 @@
 						/>
 					</template>
 
-					<template v-if="workDetail.id === 3">
+					<template v-if="workDetail.id === 2">
 						<ticketX
 							:title="workDetail.component.visualMotif.title"
 							:description="workDetail.component.visualMotif.description"
@@ -92,7 +86,7 @@
 						/>
 					</template>
 
-					<template v-if="workDetail.id === 4">
+					<template v-if="workDetail.id === 3">
 						<lalaollaMV
 							:paraTopTitle="workDetail.component.paragraphTop.title"
 							:paraTopDesc="workDetail.component.paragraphTop.description"
@@ -116,7 +110,7 @@
 						/>
 					</template>
 
-					<template v-if="workDetail.id === 5">
+					<template v-if="workDetail.id === 4">
 						<theMoment
 							:imgFull01="workDetail.component.imgFull01"
 							:textTop="workDetail.component.textTop.text"
@@ -133,13 +127,7 @@
 						/>
 					</template>
 
-					<template v-if="workDetail.id === 6">
-						<welcomeTo
-							:imgFull01="workDetail.component.imgFull01"
-						/>
-					</template>
-
-					<template v-if="workDetail.id === 7">
+					<template v-if="workDetail.id === 5">
 						<conde
 							:title="workDetail.component.visualMotif.title"
 							:description="workDetail.component.visualMotif.description"
@@ -151,6 +139,27 @@
 							:imgFull03="workDetail.component.imgFull03"
 							:textBottom="workDetail.component.textBottom.text"
 							:textBottomDesc="workDetail.component.textBottom.description"
+						/>
+					</template>
+
+					<template v-if="workDetail.id === 6">
+						<lettering
+							:contentsImgTop="workDetail.component.contentsImage.imgTop"
+							:contentsSubtitle="workDetail.component.contentsImage.subTitle"
+							:contentsSubDesc="workDetail.component.contentsImage.subDesc"
+							:imgFull01="workDetail.component.imgFull01"
+							:textTop="workDetail.component.textTop.text"
+							:textTopDesc="workDetail.component.textTop.description"
+							:imgFull02="workDetail.component.imgFull02"
+						/>
+					</template>
+
+					<template v-if="workDetail.id === 7">
+						<welcomeTo
+							:title="workDetail.component.visualMotif.title"
+							:description="workDetail.component.visualMotif.description"
+							:image="workDetail.component.visualMotif.image"
+							:imgFull01="workDetail.component.imgFull01"
 						/>
 					</template>
 
