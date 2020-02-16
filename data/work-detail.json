@@ -3,32 +3,18 @@
     {
       "id": 1,
       "static": {
-        "title": "서울은 말이지",
-        "kor": true,
-        "ctg": "Graphic",
-        "overview": "서울과 서울 사람들에 대한 느낌을 한 마디로 표현한 레터링입니다.",
-        "situation": "\"서울 사람들은 어때?\"라고 물었을때 그에 대한 대답을 생각하며 제작한 타이포그래피입니다.<br><br>서울깍쟁이, 눈뜨고 코 베어간다 등의 서울, 서울 사람을 뜻하는 말이 있습니다. 서울의 도시만큼 사람들이 딱딱하고 빽빽하다는 느낌을 많이 받았고, 다른 사람은 모르는 어떤 벽이 있어서 알다가도 모르겠다는 생각을 했습니다. 이러한 느낌을 바탕으로 획과 획 사이의 여백을 빽빽하게 꽉 채웠으며 하나의 획 자체를 벽으로 표현하여 사방이 벽으로 막혀있는 듯한 느낌을 전달하고자 하였습니다.",
-        "mainImg": "/work-detail/lettering/main.jpg"
-      },
-      "component": {
-        "textTop":{
-          "text": "poster",
-          "description": "눈뜨고 코 베어간다를 시각적으로 표현한 포스터 디자인입니다."
-        },
-        "imgFull01": "/work-detail/lettering/poster.jpg",
-        "imgFull02": "/work-detail/lettering/poster2.jpg"
-      }
-    },
-    {
-      "id": 2,
-      "static": {
         "title": "toast",
         "ctg": "Brand Experience, illustration",
         "overview": "토스트(toast)는 서양의 문화 중 하나인 건배라는 뜻을 가진 관용어 「I’d like to make a toast」 에서 파생되어 만들어진 캐릭터 디자인 회사입니다. 즐거운 축제 분위기 속의 건배만큼 일상생활에 지친 사람들이 지금 이 순간만큼은 재미있게 즐기는 것을 브랜드 목표로 하여 2030세대를 타겟으로 컨셉있는 스타일을 추구합니다.",
         "situation": "캐릭터 사업의 범위는 키덜트 문화와 함께 매우 빠르게 확대되었고 지속적으로 성장하고 있는 추세입니다. 개인의 취향에 맞는 이모티콘으로 자신의 감정을 대신 표현하며, 그러한 취향과 가치를 반영하는 제품에 아낌없이 투자하는 소비 형태가 계속되고 있습니다.<br><br>토스트는 빠르게 소비되는 시대에 맞춰 각자의 취향을 담은 다양한 프로젝트들을 진행합니다. 다양한 컬러를 담을 수 있도록 무채색을 바탕으로 하여, 모든 프로젝트마다 밝고 명랑한 느낌의 화려한 색감을 포인트 컬러로 획일하게 가져갑니다.",
-        "mainImg": "/work-detail/toast/main2.jpg"
+        "mainImg": "/work-detail/toast/sign.jpg"
       },
       "component": {
+        "contentsImage": {
+          "imgTop": "/work-detail/toast/toast-application.jpg",
+          "subTitle": "Application",
+          "subDesc": "브랜드 컬러인 무채색을 바탕으로 옐로우를 포인트로 더하여 제작된 브랜드 어플리케이션입니다."
+        },
         "paragraphTop": {
           "title": "Liquid monster",
           "description": "토스트의 첫 번째 프로젝트인 ‘리퀴드 몬스터’는 주인공 액체 괴물이 김소녀와 함께 새롭게 만난 세상 속에서 자신만의 정체성을 찾아 떠나는 여행기입니다. 액체 괴물의 특징인 틀이 없는 모양을 형상화하여 각각의 색을 담아 자신만의 개성을 표현했습니다."
@@ -57,7 +43,7 @@
       }
     },
     {
-      "id": 3,
+      "id": 2,
       "static": {
         "title": "Ticket X",
         "ctg": "Brand Experience, User Experience, User Interface",
@@ -94,7 +80,7 @@
       }
     },
     {
-      "id": 4,
+      "id": 3,
       "static": {
         "title": "Lalaolla MV",
         "ctg": "illustration / Graphic",
@@ -138,7 +124,7 @@
       }
     },
     {
-      "id": 5,
+      "id": 4,
       "static": {
         "title": "그때 그 순간의 나, 우리들",
         "kor": true,
@@ -171,23 +157,10 @@
       }
     },
     {
-      "id": 6,
-      "static": {
-        "title": "welcome to",
-        "ctg": "Graphic",
-        "overview": "'WOOGIE'의 노래 '웰컴 투 서울'의 앨범 커버 디자인입니다.",
-        "situation": "'웰컴 투 서울'은 고향을 떠나 서울살이를 하는 이들에게 재치 있는 가사로 재미와 힘을 전달합니다. 당시 이 곡을 들으며 많은 위로를 받았는데, 기존의 앨범 커버와는 색다른 느낌으로 다가가고자 하였습니다.<br><br>이 곡만의 레트로한 감성을 타이포를 통해 전달하고자 하였으며, 연배가 더 높은 어른이 쓴 듯한, 조금 삐뚤고 어딘가 부족하지만 그 만의 옛 감성이 느껴지도록 생생하게 나타냈으며, 성공에 대한 의지를 담담하지만 강하게 전달합니다.",
-        "mainImg": "/work-detail/welcomeTo/main.jpg"
-      },
-      "component": {
-        "imgFull01": "/work-detail/welcomeTo/application.jpg"
-      }
-    },
-    {
-      "id": 7,
+      "id": 5,
       "static": {
         "title": "CO&DE",
-        "ctg": "User Interface, illustration",
+        "ctg": "User Experience, User Interface, illustration",
         "client": " / CO&DE",
         "visit": true,
         "link": "http://conde.co.kr/home?lang=ko-KR",
@@ -212,6 +185,48 @@
           "text": "Mobile",
           "description": "주요 고객층을 고려하여 디자인된 모바일 페이지입니다."
         }
+      }
+    },
+    {
+      "id": 6,
+      "static": {
+        "title": "서울은 말이지",
+        "kor": true,
+        "ctg": "Graphic",
+        "overview": "서울과 서울 사람들에 대한 느낌을 재미있게 표현한 레터링입니다.",
+        "situation": "\"서울 사람들은 어때?\"라고 물었을때 그에 대한 대답을 생각하며 제작한 타이포그래피입니다.<br><br>부산에서 상경한 저에게 서울사람들의 이미지는 삭막하고 붐비는 서울의 모습과 닮아있었습니다. 말로는 표현할 수 없는 벽이 있어서 알다가도 모르겠다는 생각이 들기도 했습니다. 서울사람에 대한 첫인상을 바탕으로 획과 획 사이의 여백을 가득 채웠으며 하나의 획 자체를 벽으로 표현하여 사방이 벽으로 막혀있는 듯한 느낌을 전달하고자 하였습니다.",
+        "mainImg": "/work-detail/lettering/main.jpg"
+      },
+      "component": {
+        "contentsImage": {
+          "imgTop": "/work-detail/lettering/feature.jpg",
+          "subTitle": "feature",
+          "subDesc": "네모틀에 꽉차는 모듈로 맺음부분의 획을 돌려 딱딱하게 끊기는게 특징입니다."
+        },
+        "imgFull01": "/work-detail/lettering/poster.jpg",
+        "textTop":{
+          "text": "poster",
+          "description": "눈뜨고 코 베어간다를 시각적으로 표현한 포스터 디자인입니다."
+        },
+        "imgFull02": "/work-detail/lettering/poster2.jpg"
+      }
+    },
+    {
+      "id": 7,
+      "static": {
+        "title": "welcome to",
+        "ctg": "Graphic",
+        "overview": "'WOOGIE'의 노래 '웰컴 투 서울'의 앨범 커버 디자인입니다.",
+        "situation": "'웰컴 투 서울'은 고향을 떠나 서울살이를 하는 이들에게 재치 있는 가사로 재미와 힘을 전달합니다. 당시 이 곡을 들으며 많은 위로를 받았는데, 기존의 앨범 커버와는 색다른 느낌으로 다가가고자 하였습니다.<br><br>이 곡만의 레트로한 감성을 타이포를 통해 전달하고자 하였습니다. 연배가 더 높은 어른이 쓴 듯한, 조금 삐뚤고 어딘가 부족하지만 그 만의 옛 감성이 느껴지도록 나타냈으며, 성공에 대한 의지를 담담하지만 강하게 전달합니다.",
+        "mainImg": "/work-detail/welcomeTo/main.jpg"
+      },
+      "component": {
+        "visualMotif": {
+          "title": "Visual Motif",
+          "description": "생각했던 타이포 컨셉인 어른이 쓴 느낌을 내기위해, 실제로 제 아버지와 어머니께서 글자를 적었던 스케치입니다. 조금 못나고 모자라도 그들만의 필체는 고유하기에 의미가 있다고 생각했습니다.<br><br>이러한 날것의 느낌이 이번 '웰컴 투 서울'만의 아이덴티티이자 특징으로 타이포가 나오게 된 과정이 또 다른 재미 요소가 되었으면 좋겠습니다.",
+          "image": "/work-detail/welcomeTo/sketch.jpg"
+        },
+        "imgFull01": "/work-detail/welcomeTo/application.jpg"
       }
     },
     {
@@ -241,10 +256,10 @@
       "id": 9,
       "static": {
         "title": "Lalaolla Poster",
-        "ctg": "Brand Experience, User Interface",
+        "ctg": "Graphic",
         "client": " / INIST",
-        "overview": "이니스트바이오제약의 의약품 '라라올라'에서 '시밤'과 함께 진행한 포스터 시리즈입니다.",
-        "situation": "라라올라를 알리기 위한 홍보 수단으로 진행했던 포스터 디자인입니다. 포스터가 부착될 가게를 선정한 뒤 시밤의 글귀에 가게의 분위기를 더합니다.",
+        "overview": "이니스트바이오제약의 의약품 '라라올라'에서 글 작가 '시밤'과 함께 진행한 포스터 시리즈입니다.",
+        "situation": "라라올라를 알리기 위한 홍보 수단으로 진행했던 콘텐츠로, 포스터가 부착될 가게를 선정한 뒤 시밤의 글귀에 가게의 분위기를 더합니다.",
         "mainImg": "/work-detail/lalaollaPoster/main.jpg"
       },
       "component": {
@@ -274,7 +289,7 @@
       "id": 10,
       "static": {
         "title": "fooddeuk",
-        "ctg": "Brand Experience, User Interface",
+        "ctg": "Brand Experience, User Experience, User Interface",
         "client": " / fooddeuk",
         "visit": true,
         "link": "http://www.fooddeuk.com/",
@@ -296,7 +311,7 @@
         "imgFull02": "/work-detail/fooddeuk/pc.jpg",
         "imgFull03": "/work-detail/fooddeuk/mobile.jpg",
         "textBottom2":{
-          "text": "Main page",
+          "text": "Mobile",
           "description": "랜딩페이지 모바일 디자인입니다."
         }
       }
