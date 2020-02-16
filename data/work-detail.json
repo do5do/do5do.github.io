@@ -15,11 +15,11 @@
           "subTitle": "Application",
           "subDesc": "브랜드 컬러인 무채색을 바탕으로 옐로우를 포인트로 더하여 제작된 브랜드 어플리케이션입니다."
         },
+        "imgFull01": "/work-detail/toast/liquid-monster-poster.jpg",
         "paragraphTop": {
           "title": "Liquid monster",
           "description": "토스트의 첫 번째 프로젝트인 ‘리퀴드 몬스터’는 주인공 액체 괴물이 김소녀와 함께 새롭게 만난 세상 속에서 자신만의 정체성을 찾아 떠나는 여행기입니다. 액체 괴물의 특징인 틀이 없는 모양을 형상화하여 각각의 색을 담아 자신만의 개성을 표현했습니다."
         },
-        "imgFull01": "/work-detail/toast/liquid-monster-poster.jpg",
         "visualMotif": {
           "title": "Visual Motif",
           "description": "리퀴드 몬스터의 가장 큰 시각적 아이덴티티인 유동적인 형태는 틀이 없어 모양이 정해져 있지 않으며, 반대로 모든 틀에 알맞게 적응하기도 합니다. 이는 아직 때묻지 않고 경계가 없으며 어디든 적응할 수 있지만 누구와도 같지 않은 다양성을 뜻합니다.<br><br>토스트와 결을 같게 하여 밝고 화려한 컬러를 주로 사용하여 명랑하고 희망적인 느낌을 전달합니다.",
@@ -205,7 +205,7 @@
         },
         "imgFull01": "/work-detail/lettering/poster.jpg",
         "textTop":{
-          "text": "poster",
+          "text": "Application",
           "description": "눈뜨고 코 베어간다를 시각적으로 표현한 포스터 디자인입니다."
         },
         "imgFull02": "/work-detail/lettering/poster2.jpg"
