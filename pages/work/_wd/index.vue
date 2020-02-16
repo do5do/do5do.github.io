@@ -18,7 +18,7 @@
 								<!-- 사이트 연결 -->
 								<template v-if="workDetail.static.visit">
 									<a :href="workDetail.static.link" :target="blank" @click="handleSite()">
-										<span class="text-line bold">Visit live</span>
+										<span class="text-line">Visit live</span>
 									</a>
 								</template>
 							</p>
