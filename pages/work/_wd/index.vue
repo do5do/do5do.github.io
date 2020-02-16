@@ -46,12 +46,12 @@
 					<!-- detail contents component : s -->
 					<template v-if="workDetail.id === 1">
 						<toast
-							:paraTopTitle="workDetail.component.paragraphTop.title"
-							:paraTopDesc="workDetail.component.paragraphTop.description"
 							:contentsImgTop="workDetail.component.contentsImage.imgTop"
 							:contentsSubtitle="workDetail.component.contentsImage.subTitle"
 							:contentsSubDesc="workDetail.component.contentsImage.subDesc"
 							:imgFull01="workDetail.component.imgFull01"
+							:paraTopTitle="workDetail.component.paragraphTop.title"
+							:paraTopDesc="workDetail.component.paragraphTop.description"
 							:title="workDetail.component.visualMotif.title"
 							:description="workDetail.component.visualMotif.description"
 							:image="workDetail.component.visualMotif.image"
