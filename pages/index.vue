@@ -67,6 +67,10 @@
       this.mainTextUp();
       // tablet 감지
       this.detectTablet();
+      // resize 할 때마다 실행
+      window.addEventListener('resize', () => {
+        this.detectTablet();
+      })
     },
     methods: {
       showUnderLine (n) {
@@ -93,7 +97,7 @@
         let activeText = document.querySelectorAll('.active-text');
 
         if (this.$device.isTablet) {
-          // querySelectorAll은 한번에 선택이 안되서 모두 선택하려고 for로 갯수만큼 돌려줌
+          // querySelectorAll은 한번에 선택이 안돼서 모두 선택하려고 for로 갯수만큼 돌려줌
           for (let i=0; i < underLine.length; i++) {
             underLine[i].style.backgroundSize = '100% 0.29vw';
           }

@@ -7,7 +7,7 @@
 		</div>
 
 		<!-- image layout : height full -->
-		<figure class="wd-image body-items">
+		<figure class="wd-image body-items margin-narrow-little">
 			<img :src="imgFull01" alt="포트폴리오 이미지">
 		</figure>
 
