@@ -14,16 +14,16 @@
 			</div>
 		</div>
 
-		<!-- image layout : height full -->
-		<figure class="wd-image body-items">
-			<img :src="imgFull01" alt="포트폴리오 이미지">
-		</figure>
-
 		<!-- text layout : top -->
-		<div class="wd-paragraph body-items margin-narrow">
+		<div class="wd-paragraph body-items">
 			<p class="sub-title">{{paraTopTitle}}</p>
 			<p class="description" v-html="paraTopDesc"></p>
 		</div>
+
+		<!-- image layout : height full -->
+		<figure class="wd-image body-items margin-narrow-little">
+			<img :src="imgFull01" alt="포트폴리오 이미지">
+		</figure>
 
 		<!-- contents text : img-bottom, text-top -->
 		<div class="wd-contents contents-text body-items">
