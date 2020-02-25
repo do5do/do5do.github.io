@@ -132,7 +132,7 @@
 
 		.work-list__li {
 			display: inline-block;
-			width: 50%;
+			width: 33.3333%;
 			padding: 0 1vw;
 		}
 
@@ -164,14 +164,14 @@
 		// 높이를 정해준 이유는 title이 한글이 되었을때 사이즈가 작아져서 리스트들 정렬이 제대로 안됨
 		.text-area {
 			height: 4vw;
-			margin-bottom: 4vw;
+			margin-bottom: 3vw;
 
 			@media (max-width: $grid-bp-mobile) {
 				height: 16vw;
-				margin-bottom: 11vw;
+				margin-bottom: 8vw;
 				@media (min-width: $grid-bp-tablet-start) {
 					height: 10vw;
-					margin-bottom: 7vw;
+					margin-bottom: 4vw;
 				}
 			}
 
@@ -179,40 +179,40 @@
 				color: $point-blue;
 				font-size: 0.8vw;
 				font-weight: $regular;
-				padding: 1vw 0 .18vw 0;
+				padding: .8vw 0 .18vw 0;
 				text-transform: uppercase;
 
 				@media (max-width: $grid-bp-mobile) {
-					font-size: 3.9vw;
+					font-size: 3.2vw;
 					font-weight: $regular;
-					padding: 4vw 0 1vw 0;
+					padding: 3.5vw 0 .4vw 0;
 					@media (min-width: $grid-bp-tablet-start) {
-						font-size: 2.4vw;
-						padding: 2.2vw 0 .25vw 0;
+						font-size: 2vw;
+						padding: 2vw 0 .25vw 0;
 					}
 				}
 			}
 
 			.list-title {
-				font-size: 1.1vw;
+				font-size: 1vw;
 				font-weight: $medium;
 
 				@media (max-width: $grid-bp-mobile) {
-					font-size: 5vw;
+					font-size: 4.3vw;
 					@media (min-width: $grid-bp-tablet-start) {
-						font-size: 3vw;
+						font-size: 2.5vw;
 					}
 				}
 				// list-title이 한글일때 사이즈 조절
 				&.title-kor {
-					font-size: 0.94vw;
-					padding-top: 0.1vw;
+					font-size: 0.9vw;
 
 					@media (max-width: $grid-bp-mobile) {
-						font-size: 4.3vw;
+						font-size: 4vw;
+						padding-top: 0.1vw;
 						@media (min-width: $grid-bp-tablet-start) {
-							font-size: 2.5vw;
-							padding-top: 0.3vw;
+							font-size: 2.2vw;
+							padding-top: 0;
 						}
 					}
 				}

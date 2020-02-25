@@ -105,6 +105,7 @@
 	display: inline-block;
 	overflow: hidden;
 	margin-bottom: 1vw;
+	padding-left: .1vw; // 오른쪽 글자 잘리는거 방지
 
 	@media (max-width: $grid-bp-mobile) {
 		overflow: initial; // mobile에서 글자 가려지는거 없앰
