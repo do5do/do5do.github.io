@@ -18,7 +18,7 @@
 	position: relative;
 	z-index: 1;
 	// 공통 요소
-	.device-box {
+	.contents-box {
 		display: flex;
 		align-items: flex-start;
 
@@ -59,6 +59,7 @@
 			}
 		}
 	}
+
 	// paragraph
 	.paragraph {
 		width:31vw;
@@ -103,9 +104,10 @@
 			}
 		}
 	}
+
 	// textground layout
 	.textground {
-		.device-box:nth-child(2) {
+		.contents-box:nth-child(2) {
 			padding-top: 12vw;
 			@media (max-width: $grid-bp-mobile) {
 				padding-top: 24vw;
@@ -127,16 +129,17 @@
 			}
 		}
 		.paragraph-left {
-			margin-top: 0.6vw;
+			margin-top: 0.4vw;
 			@media (max-width: $grid-bp-mobile) {
 				margin-top: 24vw;
 			}
 		}
 	}
+
 	// dododo layout
 	.portfolio {
 		.paragraph-left {
-			margin-top: 4vw;
+			margin-top: 0.4vw;
 			@media (max-width: $grid-bp-mobile) {
 				margin-top: 24vw;
 			}

@@ -1,47 +1,31 @@
 <template>
 	<div class="wd-body">
+		<!-- image layout : height full -->
+		<figure class="wd-image body-items">
+			<img :src="imgFull01" alt="포트폴리오 이미지">
+		</figure>
 		<!-- text layout : top -->
-		<div class="wd-paragraph body-items">
+		<div class="wd-paragraph body-items wd-paragraph-narrow-little margin-narrow-little">
 			<p class="sub-title">{{paraTopTitle}}</p>
 			<p class="description" v-html="paraTopDesc"></p>
 		</div>
 
 		<!-- image layout : height full -->
-		<figure class="wd-image body-items margin-narrow-little">
-			<img :src="imgFull01" alt="포트폴리오 이미지">
+		<figure class="wd-image body-items">
+			<img :src="imgFull06" alt="포트폴리오 이미지">
 		</figure>
-
-		<figure class="wd-image body-items margin-narrow">
-			<img :src="imgFull02" alt="포트폴리오 이미지">
-		</figure>
-
-		<figure class="wd-image body-items margin-narrow">
-			<img :src="imgFull03" alt="포트폴리오 이미지">
-		</figure>
-
-		<figure class="wd-image body-items margin-narrow">
-			<img :src="imgFull04" alt="포트폴리오 이미지">
-		</figure>
-
-		<figure class="wd-image body-items margin-narrow">
-			<img :src="imgFull05" alt="포트폴리오 이미지">
-		</figure>
-
-		<!-- text layout : top -->
-		<div class="wd-paragraph body-items wd-paragraph-narrow">
+		<!-- text layout : bottom -->
+		<div class="wd-paragraph paragraph-bottom body-items margin-narrow wd-paragraph-narrow-little">
 			<p class="sub-title">{{textTop}}</p>
-			<p class="description">
-				{{textTopDesc}}
-			</p>
+			<p class="description" v-html="textTopDesc"></p>
 		</div>
 
 		<!-- image layout : height full -->
-		<figure class="wd-image body-items margin-narrow-little">
-			<img :src="imgFull06" alt="포트폴리오 이미지">
+		<figure class="wd-image body-items">
+			<img :src="imgFull07" alt="포트폴리오 이미지">
 		</figure>
-
 		<!-- text layout : top -->
-		<div class="wd-paragraph body-items wd-paragraph-narrow">
+		<div class="wd-paragraph body-items wd-paragraph-narrow margin-narrow">
 			<p class="sub-title">{{textTop2}}</p>
 			<p class="description">
 				{{textTopDesc2}}
@@ -49,28 +33,9 @@
 		</div>
 
 		<!-- image layout : height full -->
-		<figure class="wd-image body-items margin-narrow-little">
-			<img :src="imgFull07" alt="포트폴리오 이미지">
-		</figure>
-
-		<!-- text layout : bottom -->
-		<div class="wd-paragraph paragraph-bottom body-items wd-paragraph-narrow">
-			<p class="sub-title">{{textBottom}}</p>
-			<p class="description">
-				{{textBottomDesc}}
-			</p>
-		</div>
-
-		<!-- image layout : height full -->
-		<figure class="wd-image body-items margin-narrow-little">
-			<img :src="imgFull08" alt="포트폴리오 이미지">
-		</figure>
-
-		<!-- image layout : height full -->
 		<figure class="wd-image body-items">
 			<img :src="imgFull09" alt="포트폴리오 이미지">
 		</figure>
-
 		<!-- text layout : bottom -->
 		<div class="wd-paragraph paragraph-bottom body-items wd-paragraph-narrow margin-narrow">
 			<p class="sub-title">{{textBottom2}}</p>
@@ -93,18 +58,6 @@
 				default: 'title top description'
 			},
 			imgFull01: {
-				type: String,
-			},
-			imgFull02: {
-				type: String,
-			},
-			imgFull03: {
-				type: String,
-			},
-			imgFull04: {
-				type: String,
-			},
-			imgFull05: {
 				type: String,
 			},
 			textTop: {

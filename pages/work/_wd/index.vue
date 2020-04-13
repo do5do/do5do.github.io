@@ -76,6 +76,8 @@
 							:contentsSubtitle="workDetail.component.contentsImage.subTitle"
 							:contentsSubDesc="workDetail.component.contentsImage.subDesc"
 							:imgFull01="workDetail.component.imgFull01"
+							:textTop2="workDetail.component.textTop2.text"
+							:textTopDesc2="workDetail.component.textTop2.description"
 							:imgFull02="workDetail.component.imgFull02"
 							:textTop="workDetail.component.textTop.text"
 							:textTopDesc="workDetail.component.textTop.description"
@@ -83,27 +85,22 @@
 							:textBottom="workDetail.component.textBottom.text"
 							:textBottomDesc="workDetail.component.textBottom.description"
 							:imgFull04="workDetail.component.imgFull04"
+							:textBottom2="workDetail.component.textBottom2.text"
+							:textBottomDesc2="workDetail.component.textBottom2.description"
 						/>
 					</template>
 
 					<template v-if="workDetail.id === 3">
 						<lalaollaMV
+							:imgFull01="workDetail.component.imgFull01"
 							:paraTopTitle="workDetail.component.paragraphTop.title"
 							:paraTopDesc="workDetail.component.paragraphTop.description"
-							:imgFull01="workDetail.component.imgFull01"
-							:imgFull02="workDetail.component.imgFull02"
-							:imgFull03="workDetail.component.imgFull03"
-							:imgFull04="workDetail.component.imgFull04"
-							:imgFull05="workDetail.component.imgFull05"
+							:imgFull06="workDetail.component.imgFull06"
 							:textTop="workDetail.component.textTop.text"
 							:textTopDesc="workDetail.component.textTop.description"
-							:imgFull06="workDetail.component.imgFull06"
+							:imgFull07="workDetail.component.imgFull07"
 							:textTop2="workDetail.component.textTop2.text"
 							:textTopDesc2="workDetail.component.textTop2.description"
-							:imgFull07="workDetail.component.imgFull07"
-							:textBottom="workDetail.component.textBottom.text"
-							:textBottomDesc="workDetail.component.textBottom.description"
-							:imgFull08="workDetail.component.imgFull08"
 							:imgFull09="workDetail.component.imgFull09"
 							:textBottom2="workDetail.component.textBottom2.text"
 							:textBottomDesc2="workDetail.component.textBottom2.description"
@@ -111,7 +108,7 @@
 					</template>
 
 					<template v-if="workDetail.id === 4">
-						<theMoment
+						<moment
 							:imgFull01="workDetail.component.imgFull01"
 							:textTop="workDetail.component.textTop.text"
 							:textTopDesc="workDetail.component.textTop.description"
@@ -128,6 +125,18 @@
 					</template>
 
 					<template v-if="workDetail.id === 5">
+						<lettering
+							:contentsImgTop="workDetail.component.contentsImage.imgTop"
+							:contentsSubtitle="workDetail.component.contentsImage.subTitle"
+							:contentsSubDesc="workDetail.component.contentsImage.subDesc"
+							:imgFull01="workDetail.component.imgFull01"
+							:textTop="workDetail.component.textTop.text"
+							:textTopDesc="workDetail.component.textTop.description"
+							:imgFull02="workDetail.component.imgFull02"
+						/>
+					</template>
+
+					<template v-if="workDetail.id === 6">
 						<conde
 							:title="workDetail.component.visualMotif.title"
 							:description="workDetail.component.visualMotif.description"
@@ -139,18 +148,6 @@
 							:imgFull03="workDetail.component.imgFull03"
 							:textBottom="workDetail.component.textBottom.text"
 							:textBottomDesc="workDetail.component.textBottom.description"
-						/>
-					</template>
-
-					<template v-if="workDetail.id === 6">
-						<lettering
-							:contentsImgTop="workDetail.component.contentsImage.imgTop"
-							:contentsSubtitle="workDetail.component.contentsImage.subTitle"
-							:contentsSubDesc="workDetail.component.contentsImage.subDesc"
-							:imgFull01="workDetail.component.imgFull01"
-							:textTop="workDetail.component.textTop.text"
-							:textTopDesc="workDetail.component.textTop.description"
-							:imgFull02="workDetail.component.imgFull02"
 						/>
 					</template>
 
@@ -182,12 +179,6 @@
 							:imgFull02="workDetail.component.imgFull02"
 							:textBottom="workDetail.component.textBottom.text"
 							:textBottomDesc="workDetail.component.textBottom.description"
-							:imgFull03="workDetail.component.imgFull03"
-							:textTop2="workDetail.component.textTop2.text"
-							:textTopDesc2="workDetail.component.textTop2.description"
-							:imgFull04="workDetail.component.imgFull04"
-							:textBottom2="workDetail.component.textBottom2.text"
-							:textBottomDesc2="workDetail.component.textBottom2.description"
 						/>
 					</template>
 
@@ -199,10 +190,6 @@
 							:imgFull01="workDetail.component.imgFull01"
 							:textBottom="workDetail.component.textBottom.text"
 							:textBottomDesc="workDetail.component.textBottom.description"
-							:imgFull02="workDetail.component.imgFull02"
-							:imgFull03="workDetail.component.imgFull03"
-							:textBottom2="workDetail.component.textBottom2.text"
-							:textBottomDesc2="workDetail.component.textBottom2.description"
 						/>
 					</template>
 					<!-- detail contents component : e -->
@@ -233,14 +220,13 @@
 	import ticketX from '~/components/work-detail/ticketX.vue'
 	import conde from '~/components/work-detail/conde.vue'
 	import fooddeuk from '~/components/work-detail/fooddeuk.vue'
-	import theMoment from '~/components/work-detail/theMoment.vue'
+	import moment from '~/components/work-detail/moment.vue'
 	import lalaollaMV from '~/components/work-detail/lalaollaMV.vue'
 	import karryAd from '~/components/work-detail/karryAd.vue'
 	import lalaollaPoster from '~/components/work-detail/lalaollaPoster.vue'
 	import lettering from '~/components/work-detail/lettering.vue'
 	import welcomeTo from '~/components/work-detail/welcomeTo.vue'
 	import axios from "axios"
-	import VueAwesomeSwiper from "vue-awesome-swiper";
 
 	export default {
 		components: {
@@ -248,7 +234,7 @@
 			ticketX,
 			conde,
 			fooddeuk,
-			theMoment,
+			moment,
 			lalaollaMV,
 			karryAd,
 			lalaollaPoster,

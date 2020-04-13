@@ -1,29 +1,27 @@
 <template>
 	<div class="wd-body">
-		<!-- contents image : img-top, text-bottom -->
-		<div class="wd-contents body-items">
-			<figure class="wd-image">
-				<img :src="contentsImgTop" alt="포트폴리오 이미지">
-			</figure>
-			<!-- text layout : 최대 2줄 -->
-			<div class="wd-paragraph">
-				<p class="sub-title">{{contentsSubtitle}}</p>
-				<p class="description">
-					{{contentsSubDesc}}
-				</p>
-			</div>
+		<!-- image layout : height full -->
+		<figure class="wd-image body-items">
+			<img :src="contentsImgTop" alt="포트폴리오 이미지">
+		</figure>
+		<!-- text layout : top -->
+		<div class="wd-paragraph body-items margin-narrow wd-paragraph-narrow-little">
+			<p class="sub-title">{{contentsSubtitle}}</p>
+			<p class="description">
+				{{contentsSubDesc}}
+			</p>
 		</div>
 
+
+		<!-- image layout : height full -->
+		<figure class="wd-image body-items">
+			<img :src="imgFull01" alt="포트폴리오 이미지">
+		</figure>
 		<!-- text layout : top -->
-		<div class="wd-paragraph body-items">
+		<div class="wd-paragraph body-items margin-narrow wd-paragraph-narrow-little">
 			<p class="sub-title">{{paraTopTitle}}</p>
 			<p class="description" v-html="paraTopDesc"></p>
 		</div>
-
-		<!-- image layout : height full -->
-		<figure class="wd-image body-items margin-narrow-little">
-			<img :src="imgFull01" alt="포트폴리오 이미지">
-		</figure>
 
 		<!-- contents text : img-bottom, text-top -->
 		<div class="wd-contents contents-text body-items">

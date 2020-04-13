@@ -64,22 +64,30 @@
 						<p class="title font-helve">do it do it true</p>
 						<p class="sub-title">실현하는 사람, 김도희입니다.</p>
 						<p class="description">
-							<span class="bold">dohee Kim</span> / 1995.05.19<br>
+							<span class="bold">dohee Kim</span><br>
+							1995.05.19<br>
 							+82)10 - 2455 - 7030<br>
-							<span class="text-line">
+							<span>
 								<a href="mailto:#">do151015@gmail.com</a>
 							</span>
 						</p>
+						<div class="description desc-pd-top">
+							<span class="text-line">
+								<a href="https://indd.adobe.com/view/f64c86c4-4222-4e1c-ba72-1e8f6624a15f" target="_blank">이력서</a>
+						</span>
+						</div>
 					</div>
 				</div>
-				<figure class="dododo-img">
-					<img src="/images/about-illust.jpg">
-				</figure>
+				<div class="dododo-img-box">
+					<figure class="dododo-img">
+						<img src="/images/about-illust.jpg">
+					</figure>
+				</div>
 				<div class="about-info__bottom">
 					<div class="paragraph">
 						<p class="title font-helve">create 200%</p>
 						<p class="description">
-							모든 일에는 다 뜻이 있듯이 디자인[design:설계하다]에도 이유가 있어야 한다고 생각합니다. 사용성에 맞는 사고방식[100%]으로 작은 것에도 의미를 담고 숨겨진 재미를 추구합니다. 이러한 이유를 바탕으로 만들어진 시각적인 비주얼[100%]이 더해져 사용자를 매료함과 동시에 더 좋은 경험을 선사할 수 있는, 200% 실현하는 크리에이터가 되고자 합니다.
+							모든 일에는 다 뜻이 있듯이 디자인[design:설계하다]에도 이유가 있어야 한다고 생각합니다. 사용성에 맞는 사고방식[100%]으로 작은 것에도 의미를 담고 숨겨진 재미를 추구합니다. 이러한 이유를 바탕으로 만들어진 시각적인 비주얼[100%]이 더해져 사용자에게 즐거움을 주는 동시에 더 좋은 경험을 선사할 수 있는, 200% 실현하는 크리에이터가 되고자 합니다.
 						</p>
 					</div>
 					<div class="paragraph">
@@ -87,7 +95,7 @@
 						<p class="description">
 							<span class="bold">부경대학교</span><br>
 							시각디자인학과 전공<br>
-							@2014.03 ~ 2018.02
+							@2014.03 - 2018.02
 						</p>
 <!--						<p class="description desc-pd-top">-->
 <!--							<span class="bold">성모여자고등학교</span><br>-->
@@ -100,13 +108,22 @@
 						<p class="description">
 							<span class="bold">Aart</span>, a family group of Yoondesign<br>
 							graphic / UXUI designer<br>
-							@2018.05 ~ 2019.06
+							@2018.05 - 2019.06
 						</p>
-					</div>
-					<div class="description desc-pd-top">
-						<span class="text-line">
-								<a href="https://indd.adobe.com/view/f1868664-77cf-4204-8bca-e12bd71d0e3c" target="_blank">경력기술서</a>
+						<div class="description desc-pd-top">
+							<span class="text-line">
+									<a href="https://indd.adobe.com/view/f1868664-77cf-4204-8bca-e12bd71d0e3c" target="_blank">경력기술서</a>
 							</span>
+						</div>
+					</div>
+					<div class="paragraph">
+						<p class="title font-helve">drawing</p>
+						<p class="description">
+							<span class="text-line">
+								<a href="https://www.behance.net/do5do" target="_blank">behance.net/do5do</a>
+							</span>
+							@d_55do
+						</p>
 					</div>
 				</div>
 			</div>

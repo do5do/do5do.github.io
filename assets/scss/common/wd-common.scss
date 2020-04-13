@@ -86,7 +86,14 @@
 		// 이미지 옆 좁은 단락
 		&.wd-paragraph-narrow {
 			width: 16vw;
+			@media (max-width: $grid-bp-mobile) {
+				width: 100%;
+			}
+		}
 
+		// 이미지 옆 좁은 단락 (1단계)
+		&.wd-paragraph-narrow-little {
+			width: 20vw;
 			@media (max-width: $grid-bp-mobile) {
 				width: 100%;
 			}

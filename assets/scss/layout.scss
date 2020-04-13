@@ -123,7 +123,7 @@ svg {
 
 .title {
 	font-size: 2vw;
-	padding-bottom: 0.6vw;
+	padding-bottom: 0.3vw;
 
 	@media (max-width: $grid-bp-mobile) {
 		font-size: 6.5vw;
@@ -157,6 +157,7 @@ svg {
 	font-size: 0.83vw;
 	line-height: 1.4vw;
 	font-weight: $regular;
+	text-align: justify; // 양끝 정렬
 
 	@media (max-width: $grid-bp-mobile) {
 		font-size: 3.76vw;

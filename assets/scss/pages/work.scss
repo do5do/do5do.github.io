@@ -164,14 +164,14 @@
 		// 높이를 정해준 이유는 title이 한글이 되었을때 사이즈가 작아져서 리스트들 정렬이 제대로 안됨
 		.text-area {
 			//height: 4vw;
-			margin-bottom: 3vw;
+			margin-bottom: 3.5vw;
 
 			@media (max-width: $grid-bp-mobile) {
 				//height: 16vw;
-				margin-bottom: 8vw;
+				margin-bottom: 10vw;
 				@media (min-width: $grid-bp-tablet-start) {
 					//height: 10vw;
-					margin-bottom: 4vw;
+					margin-bottom: 5vw;
 				}
 			}
 

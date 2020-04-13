@@ -3,7 +3,7 @@
     {
       "id": 1,
       "ctg": ["All", "Brand Experience", "illustration"],
-      "thumbnail": "/work-detail/toast/thumbnail.jpg",
+      "thumbnail": "/work-detail/toast/sign.jpg",
       "tag": "bx/illustration",
       "title": "toast"
     },
@@ -25,25 +25,25 @@
     {
       "id": 4,
       "ctg": ["All", "illustration"],
-      "thumbnail": "/work-detail/theMoment/thumbnail.jpg",
+      "thumbnail": "/work-detail/moment/thumbnail.jpg",
       "tag": "illustration",
       "title": "그때 그 순간의 나, 우리들",
       "kor": true
     },
     {
       "id": 5,
-      "ctg": ["All", "User Experience / User Interface", "illustration"],
-      "thumbnail": "/work-detail/conde/thumbnail.jpg",
-      "tag": "uxui/illustration",
-      "title": "CO&DE"
-    },
-    {
-      "id": 6,
       "ctg": ["All", "Graphic"],
       "thumbnail": "/work-detail/lettering/thumbnail.jpg",
       "tag": "graphic",
       "title": "서울은 말이지",
       "kor": true
+    },
+    {
+      "id": 6,
+      "ctg": ["All", "User Experience / User Interface", "illustration"],
+      "thumbnail": "/work-detail/conde/thumbnail.jpg",
+      "tag": "uxui/illustration",
+      "title": "CO&DE"
     },
     {
       "id": 7,
