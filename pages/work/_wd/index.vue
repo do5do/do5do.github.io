@@ -268,7 +268,7 @@
 						// 1000 이하 모바일
 						1000: {
 							init: false,
-							//direction: 'vertical',  // direction을 넣으면 mobile 스크롤이 안됨(swiper가 제대로 안되고 있기때문)
+							direction: 'vertical',  // direction을 넣으면 mobile 스크롤이 안됨(swiper가 제대로 안되고 있기때문)
 						}
 					}
 				},
